@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys,json,hashlib,re
 ROOT=Path(__file__).resolve().parents[3];W=ROOT/'B题/work/paper'
-sys.path.insert(0,'/Users/a1/.codex/skills/math-modeling/tools/docx/scripts')
+sys.path.insert(0,str(Path.home()/'.codex/skills/math-modeling/tools/docx/scripts'))
 import paper_format as pf
 from docx import Document
 from docx.oxml.ns import qn
