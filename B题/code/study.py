@@ -75,6 +75,8 @@ def main():
                  worst_optical_distance_m=math.hypot(14,750*math.sin(math.radians(ALPHA)))),
                  official_windows_results='NOT_RUN',runtime_s=time.monotonic()-started)
     (out/'study_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
-    csv_write(out/'official_results_to_fill.csv',[dict(question=q,run=i,case_code='未执行',cleared='未执行',average_time_s='未执行',program_runtime_s='未执行',encrypted_log='未导出') for q in ['q3','q4'] for i in range(1,4)])
+    # Offline reproduction must never overwrite real official results entered later.
+    if not (out/'official_results_to_fill.csv').exists():
+        csv_write(out/'official_results_to_fill.csv',[dict(question=q,run=i,case_code='未执行',cleared='未执行',average_time_s='未执行',program_runtime_s='未执行',encrypted_log='未导出') for q in ['q3','q4'] for i in range(1,4)])
     print('Saved',out,flush=True)
 if __name__=='__main__':main()

@@ -6,6 +6,7 @@ os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'B题/work/mpl'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
 import numpy as np
 from matplotlib.patches import Circle,Polygon
 sys.path.insert(0,str(ROOT/'utils'))
@@ -13,7 +14,11 @@ import plot_style as ps
 from export_figure import export_figure
 from geometry import unit,mul,add
 
-plt.rcParams.update({'font.family':['Times New Roman','Songti SC','STSong','Arial Unicode MS'],
+available_fonts={f.name for f in font_manager.fontManager.ttflist}
+cjk_font=next((f for f in ['SimSun','Songti SC','STSong','Noto Serif CJK SC','Microsoft YaHei'] if f in available_fonts),None)
+if cjk_font is None:
+    raise RuntimeError('No supported CJK font installed; install SimSun or Noto Serif CJK SC before exporting.')
+plt.rcParams.update({'font.family':['Times New Roman',cjk_font],
                      'font.size':9,'axes.unicode_minus':False,'axes.spines.top':False,
                      'axes.spines.right':False,'svg.fonttype':'none','axes.linewidth':0.7})
 BLUE='#0072B2';ORANGE='#D55E00';GREEN='#009E73';GRAY='#777777'

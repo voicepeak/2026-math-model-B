@@ -1,0 +1,125 @@
+{
+  "query": "Optimization observer trajectories bearings-only target localization",
+  "cross_validated": [
+    {
+      "title": "Optimization of observer trajectories for bearings-only target localization",
+      "authors": [
+        "Yaakov Oshman",
+        "Pavel Davidson"
+      ],
+      "year": 1999,
+      "citations": 388,
+      "doi": "10.1109/7.784059",
+      "abstract": "The problem of bearings-only target localization is to estimate the location of a fixed target from a sequence of noisy bearing measurements. Although, in theory, this process is observable even without an observer maneuver, estimation performance (i.e., accuracy, stability and convergence rate) can be greatly enhanced by properly exploiting observer motion to increase observability. This work addresses the optimization of observer trajectories for bearings-only fixed-target localization. The approach presented herein is based on maximizing the determinant of the Fisher information matrix (FIM), subject to state constraints imposed on the observer trajectory (e.g., by the target defense system). Direct optimal control numerical schemes, including the recently introduced differential inclusion (DI) method, are used to solve the resulting optimal control problem. Computer simulations, utilizing the familiar Stansfield and maximum likelihood (ML) estimators, demonstrate the enhancement to target position estimability using the optimal observer trajectories.",
+      "sources": [
+        "openalex",
+        "anysearch"
+      ],
+      "cross_validated": true,
+      "venue": "IEEE Transactions on Aerospace and Electronic Systems",
+      "volume": "35",
+      "issue": "3",
+      "pages": "892-902",
+      "url": "https://doi.org/10.1109/7.784059"
+    },
+    {
+      "title": "An optimization algorithm of multi-observer trajectories for cooperative bearings-only target localization",
+      "authors": [
+        "Xiaohua Chen",
+        "Zhen Xu",
+        "Liyang Rui"
+      ],
+      "year": 2009,
+      "citations": 2,
+      "doi": "10.1109/icics.2009.5397668",
+      "abstract": "In the sparse wireless sensor networks, it is difficult to utilize only a few fixed nodes to achieve high-precision target localization due to the limited number of optional nodes. This paper proposes an optimization algorithm of multi-observer trajectories for collaborative bearings-only target localization to minimize the expected filtered RMS position error. The rule of the search scope of the optimal positions for observers is proposed, based on the observers and target bearing distributing relationships. Computer simulations demonstrate that the proposed algorithm has the better target localization performance. Finally, the general rules of multi-observer optimal trajectories are concluded.",
+      "sources": [
+        "openalex",
+        "anysearch"
+      ],
+      "cross_validated": true,
+      "venue": null,
+      "volume": null,
+      "issue": null,
+      "pages": "1-5",
+      "url": "https://doi.org/10.1109/icics.2009.5397668"
+    },
+    {
+      "title": "Optimization of Observer Trajectories for Bearings-Only Target Localization under Threat Constraints",
+      "authors": [
+        "Feng Guo-qiang"
+      ],
+      "year": 2010,
+      "citations": 1,
+      "doi": null,
+      "abstract": "The observer trajectory optimization in bearings-only localization of moving target under constraints of threats of the target defense systems is presented.A mathematical model under the threats is established,and the performance index function is based on maximizing the determinant of the Fisher information matrix(FIM).Genetic Algorithm is used to solve the resulting optimal control problem and the Gaussian particle filter is utilized to evaluate the state of the target.In order to illustrate the effect on the position performance,certain straight movement and snake maneuver are provided to compare the position performance with the optimized trajectory,separately with and without the threats constraints.The Monte Carlo simulation shows that the position precision of the optimized trajectory is better than that of the straight movement and the snake maneuver,while the optimized trajectories with different threat degrees,the less of the threat,the more of the position precision.",
+      "sources": [
+        "openalex",
+        "anysearch"
+      ],
+      "cross_validated": true,
+      "venue": "Journal of North University of China",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "http://en.cnki.com.cn/Article_en/CJFDTOTAL-HBGG201005007.htm"
+    },
+    {
+      "title": "Optimal Rendezvous Guidance with Enhanced Bearings-Only Observability",
+      "authors": [
+        "J. Grzymisch",
+        "Walter Fichter"
+      ],
+      "year": 2015,
+      "citations": 37,
+      "doi": "10.2514/1.g000822",
+      "abstract": "No AccessEngineering NoteOptimal Rendezvous Guidance with Enhanced Bearings-Only ObservabilityJonathan Grzymisch and Walter FichterJonathan GrzymischInstitute of Flight Mechanics and Control, University of Stuttgart, 70569 Stuttgart, Germany and Walter FichterInstitute of Flight Mechanics and Control, University of Stuttgart, 70569 Stuttgart, GermanyPublished Online:20 Apr 2015https://doi.org/10.2514/1.G000822SectionsRead Now ToolsAdd to favoritesDownload citationTrack citations About References [1] Breger L. S. and How J. P., \"Safe Trajectories for Autonomous Rendezvous of Spacecraft,\" Journal of Guidance, Control, and Dynamics, Vol. 31, No. 5, 2008, pp. 1478–1489. doi:https://doi.org/10.2514/1.29590 JGCDDT 0162-3192 LinkGoogle Scholar[2] Lu P. and Liu X., \"Autonomous Trajectory Planning for Rendezvous and Proximity Operations by Conic Optimization,\" Journal of Guidance, Control, and Dynamics, Vol. 36, No. 2, 2013, pp. 375–389. doi:https://doi.org/10.2514/1.58436 JGCDDT 0162-3192 LinkGoogle Scholar[3] Woffinden D. C., \"Angles-Only Navigation for Autonomous Orbital Rendezvous,\" Ph.D. Thesis, Utah State Univ., Logan, UT, 2008. Google Scholar[4] D'Amico S., Ardaens J.-S., Gaias G., Benninghoff H., Schlepp B. and Jørgensen J. L., \"Noncooperative Rendezvous Using Angles-Only Optical Navigation: System Design and Flight Results,\" Journal of Guidance, Control, and Dynamics, Vol. 36, No. 6, 2013, pp. 1576–1595. doi:https://doi.org/10.2514/1.59236 JGCDDT 0162-3192 LinkGoogle Scholar[5] Grzymisch J., Fehse W., Fichter W., Casasco M. and Losa D., \"On the Issues and Requirements of Bearings-Only Guidance and Navigation for In-Orbit Rendezvous,\" Proceedings of the 64th International Astronautical Congress, International Astronautical Federation Paper IAC-13,C1,5,3,x17614, Paris, 2013. Google Scholar[6] Grzymisch J., Fichter W., Casasco M. and Losa D., \"Spherical Coordinate Parameterization for an In-Orbit Bearings-Only Navigation Filter,\" Advances in Aerospace Guidance, Navigation and Control, Springer–Verlag, Berlin, pp. 215–231. doi:https://doi.org/10.1007/978-3-642-38253-6 Google Scholar[7] Woffinden D. C. and Geller D. K., \"Observability Criteria for Angles-Only Navigation,\" IEEE Transactions on Aerospace and Electronic Systems, Vol. 45, No. 3, 2009, pp. 1194–1208. doi:https://doi.org/10.1109/TAES.2009.5259193 IEARAX 0018-9251 CrossrefGoogle Scholar[8] Grzymisch J. and Fichter W., \"Observability Criteria and Unobservable Maneuvers for In-Orbit Bearings-Only Navigation,\" Journal of Guidance, Control, and Dynamics, Vol. 37, No. 4, 2014, pp. 1–10. doi:https://doi.org/10.2514/1.62476 JGCDDT 0162-3192 LinkGoogle Scholar[9] Oshman Y. and Davidson P., \"Optimization of Observer Trajectories for Bearings-Only Target Localization,\" IEEE Transactions on Aerospace and Electronic Systems, Vol. 35, No. 3, 1999, pp. 892–902. doi:https://doi.org/10.1109/7.784059 IEARAX 0018-9251 CrossrefGoogle Scholar[10] Ponda S., Kolacinski R. and Frazzoli E., \"Trajectory Optimization for Target Localization Using Small Unmanned Aerial Vehicles,\" AIAA Guidance, Navigation, and Control Conference, AIAA Paper 2009-6015, Aug. 2009. doi:https://doi.org/10.2514/6.2009-6015 LinkGoogle Scholar[11] Fosbury A. M. and Crassidis J. L., \"Optimal Trajectory Determination for Increased Relative Navigation Observability of Air Vehicles,\" AIAA Guidance, Navigation and Control Conference, AIAA, Reston, VA, 2008, p. 2. doi:https://doi.org/10.2514/6.2008-6648 Google Scholar[12] Woffinden D. C. and Geller D. K., \"Optimal Orbital Rendezvous Maneuvering for Angles-Only Navigation,\" Journal of Guidance, Control, and Dynamics, Vol. 32, No. 4, 2009, pp. 1382–1387. doi:https://doi.org/10.2514/1.45006 JGCDDT 0162-3192 LinkGoogle Scholar[13] Grzymisch J. and Fichter W., \"Analytic Optimal Observability Maneuvers for In-Orbit Bearings-Only Rendezvous,\" Journal of Guidance, Control, and Dynamics, Vol. 37, No. 5, 2014, pp. 1658–1664. doi:https://doi.org/10.2514/1.G000612 JGCDDT 0162-3192 LinkGoogle Scholar[14] Marler R. T. and Arora J. S., \"Survey of Multi-Objective Optimization Methods for Engineering,\" Structural and Multidisciplinary Optimization, Vol. 26, No. 6, 2004, pp. 369–395. doi:https://doi.org/10.1007/s00158-003-0368-6 CrossrefGoogle Scholar[15] Fehse W., Automated Rendezvous and Docking of Spacecraft, Cambridge Aerospace Series, Cambridge Univ. Press, Cambridge, England, U.K., 2003, pp. 29–75, 424–440. doi:https://doi.org/10.1017/CBO9780511543388 CrossrefGoogle Scholar[16] Yamanaka K. and Ankersen F., \"New State Transition Matrix for Relative Motion on an Arbitrary Elliptical Orbit,\" Journal of Guidance, Control, and Dynamics, Vol. 25, No. 1, 2002, pp. 60–66. doi:https://doi.org/10.2514/2.4875 JGCDDT 0162-3192 LinkGoogle Scholar[17] Gaias G., D'Amico S. and Ardaens J., \"Angles-Only Navigation to a Noncooperative Satellite Using Relative Orbital Elements,\" Journal of Guidance, Control, and Dynamics, Vol. 37, No. 2, 2014, pp. 439–451. doi:https://doi.org/10.2514/1.61494 JGCDDT 0162-3192 LinkGoogle Scholar[18] Nocedal J., Wright S. J. and Robinson S. M., Numerical Optimization, Springer Series in Operations Research and Financial Engineering, Springer–Verlag, New York, 2006, pp. 392–420, 448–492. doi:https://doi.org/10.1007/978-0-387-40065-5 Google Scholar[19] Liu X. and Lu P., \"Solving Nonconvex Optimal Control Problems by Convex Optimization,\" Journal of Guidance, Control, and Dynamics, Vol. 37, No. 3, 2014, pp. 750–765. doi:https://doi.org/10.2514/1.62110 JGCDDT 0162-3192 LinkGoogle Scholar[20] Richards A., Schouwenaars T., How J. P. and Feron E., \"Spacecraft Trajectory Planning with Avoidance Constraints Using Mixed-Integer Linear Programming,\" Journal of Guidance, Control, and Dynamics, Vol. 25, No. 4, 2002, pp. 755–764. doi:https://doi.org/10.2514/2.4943 JGCDDT 0162-3192 LinkGoogle Scholar[21] Das I. and Dennis J. E., \"Closer Look at Drawbacks of Minimizing Weighted Sums of Objectives for Pareto Set Generation in Multicriteria Optimization Problems,\" Structural Optimization, Vol. 14, No. 1, 1997, pp. 63–69. doi:https://doi.org/10.1007/BF01197559 SOPTEQ 0934-4373 CrossrefGoogle Scholar Previous article Next article",
+      "sources": [
+        "openalex",
+        "anysearch"
+      ],
+      "cross_validated": true,
+      "venue": "Journal of Guidance Control and Dynamics",
+      "volume": "38",
+      "issue": "6",
+      "pages": "1131-1140",
+      "url": "https://doi.org/10.2514/1.g000822"
+    },
+    {
+      "title": "Application of Spherical-Radial Cubature Bayesian Filtering and Smoothing in Bearings Only Passive Target Tracking",
+      "authors": [
+        "Wasiq Ali",
+        "Yaan Li",
+        "Zhe Chen",
+        "Muhammad Asif Zahoor Raja",
+        "Nauman Ahmed",
+        "Xiao Chen"
+      ],
+      "year": 2019,
+      "citations": 13,
+      "doi": "10.3390/e21111088",
+      "abstract": "In this paper, an application of spherical radial cubature Bayesian filtering and smoothing algorithms is presented to solve a typical underwater bearings only passive target tracking problem effectively. Generally, passive target tracking problems in the ocean environment are represented with the state-space model having linear system dynamics merged with nonlinear passive measurements, and the system is analyzed with nonlinear filtering algorithms. In the present scheme, an application of spherical radial cubature Bayesian filtering and smoothing is efficiently investigated for accurate state estimation of a far-field moving target in complex ocean environments. The nonlinear model of a Kalman filter based on a Spherical Radial Cubature Kalman Filter (SRCKF) and discrete-time Kalman smoother known as a Spherical Radial Cubature Rauch–Tung–Striebel (SRCRTS) smoother are applied for tracking the semi-curved and curved trajectory of a moving object. The worth of spherical radial cubature Bayesian filtering and smoothing algorithms is validated by comparing with a conventional Unscented Kalman Filter (UKF) and an Unscented Rauch–Tung–Striebel (URTS) smoother. Performance analysis of these techniques is performed for white Gaussian measured noise variations, which is a significant factor in passive target tracking, while the Bearings Only Tracking (BOT) technology is used for modeling of a passive target tracking framework. Simulations based experiments are executed for obtaining least Root Mean Square Error (RMSE) among a true and estimated position of a moving target at every time instant in Cartesian coordinates. Numerical results endorsed the validation of SRCKF and SRCRTS smoothers with better convergence and accuracy rates than that of UKF and URTS for each scenario of passive target tracking problem.",
+      "sources": [
+        "openalex",
+        "anysearch"
+      ],
+      "cross_validated": true,
+      "venue": "Entropy",
+      "volume": "21",
+      "issue": "11",
+      "pages": "1088-1088",
+      "url": "https://doi.org/10.3390/e21111088"
+    }
+  ],
+  "openalex_only": [],
+  "anysearch_only": [],
+  "stats": {
+    "openalex_total": 15,
+    "anysearch_total": 10,
+    "cross_validated": 9,
+    "openalex_unique": 4,
+    "anysearch_unique": 0,
+    "filtered_irrelevant": 2,
+    "collapsed_duplicates": 0
+  }
+}
