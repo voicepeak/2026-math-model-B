@@ -7,25 +7,25 @@
 把整个项目或“Windows运行包.zip”解压到Windows普通文件夹，不要直接在压缩包内运行。用终端进入解压后的项目根目录（能看到B题文件夹）。策略只用Python标准库；建议Python3.10或以上。
 
 ```powershell
-py --version
-py B题/code/test_core.py
-py B题/code/minimal.py
+python --version
+python B题/code/test_core.py
+python B题/code/minimal.py
 ```
 
-第一条检查解释器；后两条完全离线，预期9项测试通过、两类构造场景均清除10/10。它们不会连接官方模拟器，不占正式次数。若py不存在，可用已安装解释器的python命令。无Python时须先安装。
+第一条检查解释器；后两条完全离线，预期9项测试通过、两类构造场景均清除10/10。它们不会连接官方模拟器，不占正式次数。本文统一使用`python`；若本机只有Windows `py`启动器，可把命令中的`python`替换为`py`。不要依赖某台机器上的固定解释器绝对路径。
 
 ## 2 官方演练
 
 在同一台Windows电脑打开官方模拟器，联网登录。先选择“问题3演练测试”，等待界面显示接口就绪（倒计时期间连接不上是正常的）。将下面的“实际参赛队号”替换为当前登录的队号：
 
 ```powershell
-py B题/code/run_robot.py --mode q3 --robot-id 实际参赛队号
+python B题/code/run_robot.py --mode q3 --robot-id 实际参赛队号
 ```
 
 问题4演练选择对应模块，运行：
 
 ```powershell
-py B题/code/run_robot.py --mode q4 --robot-id 实际参赛队号
+python B题/code/run_robot.py --mode q4 --robot-id 实际参赛队号
 ```
 
 默认地址http://127.0.0.1:2026。若模拟器改了端口，加参数`--url http://127.0.0.1:新端口`。不要同时运行两份机器狗，不要在同一次测试中重新启动程序。程序异常时先保存输出和日志，不要连续启动消耗正式次数。
@@ -56,8 +56,8 @@ py B题/code/run_robot.py --mode q4 --robot-id 实际参赛队号
 ## 5 问题1与问题2通用求解
 
 ```powershell
-py B题/code/solve_q1.py B题/code/q1_example.json --output q1_answer.json
-py B题/code/solve_q2.py --x 0 --y 0 --bearing 0 --output q2_custom
+python B题/code/solve_q1.py B题/code/q1_example.json --output q1_answer.json
+python B题/code/solve_q2.py --x 0 --y 0 --bearing 0 --output q2_custom
 ```
 
 问题1输入JSON中的observations是[x米,y米,示向度度]列表；alpha_deg默认1。空集/无界会明确输出状态，不输出伪有限直径。问题2输出全局坐标候选表与最优格点；输入第一测点和示向度可改。50米候选网格与有限情景是近似选择，保证接收条件则由连续几何判定。
@@ -67,8 +67,8 @@ py B题/code/solve_q2.py --x 0 --y 0 --bearing 0 --output q2_custom
 Windows策略不需要第三方库；复现科学图表需安装：
 
 ```powershell
-py -m pip install numpy matplotlib scipy pillow
-py B题/code/reproduce.py
+python -m pip install numpy matplotlib pillow
+python B题/code/reproduce.py
 ```
 
 中文图字体优先Songti SC/STSong，Windows无这些字体时需配置为本机已有中文字体（如SimSun）后重画，不能忽略缺字报告。results中的构造结果可以覆盖重算，windows_results中的官方测试记录不在复现脚本覆盖范围。
