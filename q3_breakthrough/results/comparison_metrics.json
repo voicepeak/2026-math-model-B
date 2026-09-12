@@ -1,0 +1,311 @@
+{
+  "paired_random": {
+    "gemini": {
+      "cases": 40,
+      "sources": 526,
+      "cleared": 526,
+      "total_time": 250616.55117725293,
+      "avg": 476.45732162975844,
+      "distance": 1050802.7558862648,
+      "measures": 6401,
+      "worst": 580.2030351151352,
+      "fallback": 0,
+      "max_runtime": 4.494222799985437
+    },
+    "breakthrough": {
+      "cases": 40,
+      "sources": 526,
+      "cleared": 526,
+      "total_time": 129850.83056811261,
+      "avg": 246.86469689755248,
+      "distance": 499899.152840563,
+      "measures": 4586,
+      "worst": 339.8109156032708,
+      "fallback": 0,
+      "max_runtime": 2.61316569999326
+    },
+    "reduction": 0.4818744813215734,
+    "wins": 40,
+    "worst_pair_reduction": 0.37459409052283055,
+    "paired_bootstrap_95pct": [
+      0.4686389178726721,
+      0.4954400965835998
+    ]
+  },
+  "stress": {
+    "gemini": {
+      "cases": 50,
+      "sources": 640,
+      "cleared": 640,
+      "total_time": 298407.0859628583,
+      "avg": 466.2610718169661,
+      "distance": 1249645.4298142914,
+      "measures": 7646,
+      "worst": 583.0941127327532,
+      "fallback": 0,
+      "max_runtime": 3.453718399978243
+    },
+    "breakthrough": {
+      "cases": 50,
+      "sources": 640,
+      "cleared": 640,
+      "total_time": 162833.48089254223,
+      "avg": 254.42731389459723,
+      "distance": 620317.4044627111,
+      "measures": 5986,
+      "worst": 427.16362763003247,
+      "fallback": 0,
+      "max_runtime": 3.13456049998058
+    },
+    "reduction": 0.4543243490109027,
+    "wins": 50,
+    "worst_pair_reduction": 0.26741906957683115,
+    "paired_bootstrap_95pct": [
+      0.4265721515533596,
+      0.4813530079872462
+    ]
+  },
+  "holdout": {
+    "gemini": {
+      "cases": 100,
+      "sources": 1312,
+      "cleared": 1312,
+      "total_time": 615830.014348209,
+      "avg": 469.3826328873544,
+      "distance": 2580965.0717410455,
+      "measures": 15736,
+      "worst": 593.4985973719903,
+      "fallback": 0,
+      "max_runtime": 3.01671830000123
+    },
+    "breakthrough": {
+      "cases": 100,
+      "sources": 1312,
+      "cleared": 1312,
+      "total_time": 322108.85756137624,
+      "avg": 245.50979997056115,
+      "distance": 1232204.2878068811,
+      "measures": 11635,
+      "worst": 332.209750184952,
+      "fallback": 0,
+      "max_runtime": 3.268319299997529
+    },
+    "reduction": 0.47695167488337764,
+    "wins": 100,
+    "worst_pair_reduction": 0.3540954180977416,
+    "paired_bootstrap_95pct": [
+      0.4679036317672361,
+      0.48510347019233163
+    ]
+  },
+  "all": {
+    "gemini": {
+      "cases": 190,
+      "sources": 2478,
+      "cleared": 2478,
+      "total_time": 1164853.6514883202,
+      "avg": 470.07814830037137,
+      "distance": 4881413.257441602,
+      "measures": 29783,
+      "worst": 593.4985973719903,
+      "fallback": 0,
+      "max_runtime": 4.494222799985437
+    },
+    "breakthrough": {
+      "cases": 190,
+      "sources": 2478,
+      "cleared": 2478,
+      "total_time": 614793.1690220311,
+      "avg": 248.1005524705533,
+      "distance": 2352420.845110155,
+      "measures": 22207,
+      "worst": 427.16362763003247,
+      "fallback": 0,
+      "max_runtime": 3.268319299997529
+    },
+    "reduction": 0.4722142406159633,
+    "wins": 190,
+    "worst_pair_reduction": 0.26741906957683115,
+    "paired_bootstrap_95pct": [
+      0.46287173480669563,
+      0.4813378350477313
+    ]
+  },
+  "stress_groups": {
+    "bias": {
+      "gemini": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 61272.048400322135,
+        "avg": 478.6878781275167,
+        "distance": 257170.2420016107,
+        "measures": 1556,
+        "worst": 548.5775990367772,
+        "fallback": 0,
+        "max_runtime": 1.4562512999982573
+      },
+      "breakthrough": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 31342.286317385326,
+        "avg": 244.86161185457286,
+        "distance": 119146.43158692661,
+        "measures": 1157,
+        "worst": 299.80787762038665,
+        "fallback": 0,
+        "max_runtime": 1.4309364999935497
+      },
+      "reduction": 0.48847333921970615,
+      "wins": 10,
+      "worst_pair_reduction": 0.3697514467842893,
+      "paired_bootstrap_95pct": [
+        0.4593585605031072,
+        0.5106044525280776
+      ]
+    },
+    "cluster": {
+      "gemini": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 52177.49617174371,
+        "avg": 407.63668884174774,
+        "distance": 214822.48085871854,
+        "measures": 1450,
+        "worst": 513.820595240243,
+        "fallback": 0,
+        "max_runtime": 2.184296599996742
+      },
+      "breakthrough": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 21684.147857486085,
+        "avg": 169.40740513661004,
+        "distance": 72425.73928743044,
+        "measures": 1103,
+        "worst": 219.11339143232266,
+        "fallback": 0,
+        "max_runtime": 3.13456049998058
+      },
+      "reduction": 0.5844157069915333,
+      "wins": 10,
+      "worst_pair_reduction": 0.4920910674493978,
+      "paired_bootstrap_95pct": [
+        0.5508905239720583,
+        0.6194716313181684
+      ]
+    },
+    "edge": {
+      "gemini": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 64192.96984028465,
+        "avg": 501.5075768772238,
+        "distance": 272224.8492014233,
+        "measures": 1531,
+        "worst": 583.0941127327532,
+        "fallback": 0,
+        "max_runtime": 1.9519268000149168
+      },
+      "breakthrough": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 44216.474308968005,
+        "avg": 345.44120553881254,
+        "distance": 177022.37154484002,
+        "measures": 1377,
+        "worst": 427.16362763003247,
+        "fallback": 0,
+        "max_runtime": 1.945638000004692
+      },
+      "reduction": 0.3111944435818934,
+      "wins": 10,
+      "worst_pair_reduction": 0.26741906957683115,
+      "paired_bootstrap_95pct": [
+        0.2895080919253852,
+        0.3332294982914279
+      ]
+    },
+    "extreme": {
+      "gemini": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 61267.1119595616,
+        "avg": 478.649312184075,
+        "distance": 257120.55979780797,
+        "measures": 1557,
+        "worst": 548.1547997478342,
+        "fallback": 0,
+        "max_runtime": 1.857993899990106
+      },
+      "breakthrough": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 31945.5908475702,
+        "avg": 249.5749284966422,
+        "distance": 122527.954237851,
+        "measures": 1143,
+        "worst": 282.15134130100256,
+        "fallback": 0,
+        "max_runtime": 2.0257832999923266
+      },
+      "reduction": 0.4785850054649974,
+      "wins": 10,
+      "worst_pair_reduction": 0.4084673864017413,
+      "paired_bootstrap_95pct": [
+        0.45771951027011704,
+        0.4987319509648017
+      ]
+    },
+    "minrange": {
+      "gemini": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 59497.45959094617,
+        "avg": 464.82390305426696,
+        "distance": 248307.29795473095,
+        "measures": 1552,
+        "worst": 545.3545370609506,
+        "fallback": 0,
+        "max_runtime": 3.453718399978243
+      },
+      "breakthrough": {
+        "cases": 10,
+        "sources": 128,
+        "cleared": 128,
+        "total_time": 33644.98156113262,
+        "avg": 262.8514184463486,
+        "distance": 129194.90780566308,
+        "measures": 1206,
+        "worst": 337.1048621032523,
+        "fallback": 0,
+        "max_runtime": 2.8719135000137612
+      },
+      "reduction": 0.4345139810599168,
+      "wins": 10,
+      "worst_pair_reduction": 0.28341161049803454,
+      "paired_bootstrap_95pct": [
+        0.3971320032842637,
+        0.46324898527002034
+      ]
+    }
+  },
+  "ablation": {
+    "no_shared": 276.8563660971807,
+    "fixed_cover": 314.9173079597329,
+    "breakthrough": 247.58380848933393
+  },
+  "three_generations": {
+    "original": 760.7604178419426,
+    "gemini": 477.43990982459155,
+    "breakthrough": 251.25448107665088
+  }
+}
