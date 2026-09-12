@@ -1,0 +1,333 @@
+{
+  "status": "PASS",
+  "scope": "P1 incremental v2 and combined; no network or official runs",
+  "hashes": {
+    "prototype_v1.py": "7d0cc4f22a0cbd3fbe634faaabf01c988fb605fba470e00a315b8af5697e2062",
+    "prototype_v2.py": "8d1d65f5a523207813abdb0379ec468e839cbe51773a812c399b16bc80d36df7",
+    "strategy.py": "7d0cc4f22a0cbd3fbe634faaabf01c988fb605fba470e00a315b8af5697e2062",
+    "coverage_exact.py": "4d1f8ae2124d7d57b811723f87bd06a82e97f471e2180f50799fa76b9a7b9881",
+    "benchmark.py": "8ca4809a3bb3e693c5ef72438dd1e53f6a58d5ef012f9f564b8971c5c38ae640",
+    "baseline_breakthrough.py": "5c90c1ac82423163225032e36d72f616bf34a6b1bfa8c0ff9e3143f06894dd1e",
+    "robot_core.py": "ba59becdf95fdfc858a66b87ff5b8c11380d02dfb27e595f939f00a3d25d4e71",
+    "geometry.py": "99d405d4ec6d1e7a2e87129f6f0eebc5bb6c32d3a514da642d22d7ea34822c4e",
+    "offline_sim.py": "d516b6034a55f6b9352560cd23efce0d99dbbf7aa1916fa464e4662c85dafb0f",
+    "robot_client.py": "113e7ce09d64e8f0bdc95ddd506ea8d1facf49b550ee76b53433dd02b6a72e6f",
+    "run_robot.py": "da7addf1b91ee6aa9d63130dac118f5fcd48444d421aa047705459471bfd2979"
+  },
+  "rows": [
+    {
+      "name": "v2",
+      "seed": 17,
+      "stress": "minrange",
+      "count": 10,
+      "summary": {
+        "mode": "q3",
+        "status": "complete_coverage",
+        "cleared": 10,
+        "channels": [
+          3,
+          9,
+          10,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20
+        ],
+        "virtual_time_s": 3646.9393094127777,
+        "average_time_s": 364.69393094127776,
+        "measures": 132,
+        "clear_attempts": 10,
+        "fallback_count": 0,
+        "official_validated": false,
+        "algorithm": "ultimate200_v2",
+        "shared_measures": 16,
+        "full_scan_count": 7,
+        "uncovered_cells": 8,
+        "pending_tracks": 0,
+        "coverage_cell_m": 100.0,
+        "fixed_nodes_visited": 0,
+        "coverage_certificate": "voronoi_outer_polygon",
+        "visibility": true,
+        "joint": true,
+        "coverage_worst_m": 968.9015717043841,
+        "scan_gain": 12,
+        "optical_trial_radius": 0,
+        "phases": 1,
+        "runtime_s": 1.2811342000204604
+      },
+      "checks": {
+        "truth_containment": 312,
+        "certified_clears": 9,
+        "timing_steps": 142
+      },
+      "reconstructed_virtual_time_s": 3646.9393094127777,
+      "distance_m": 14074.696547063888,
+      "switches": 122,
+      "failed_optical_attempts": [],
+      "coverage": {
+        "complete": true,
+        "worst_distance_m": 968.9015717043841,
+        "witness": [
+          -4.405364961712621e-13,
+          -1800.0
+        ],
+        "scans": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1200.0,
+            1.4695761589768238e-13
+          ],
+          [
+            -600.0000000000006,
+            -1039.2304845413262
+          ],
+          [
+            600.0000000000001,
+            -1039.2304845413264
+          ],
+          [
+            1200.0,
+            0.0
+          ],
+          [
+            600.0000000000001,
+            1039.2304845413264
+          ],
+          [
+            -599.9999999999998,
+            1039.2304845413264
+          ]
+        ]
+      }
+    },
+    {
+      "name": "combined",
+      "seed": 17,
+      "stress": "minrange",
+      "count": 10,
+      "summary": {
+        "mode": "q3",
+        "status": "complete_coverage",
+        "cleared": 10,
+        "channels": [
+          3,
+          9,
+          10,
+          12,
+          13,
+          14,
+          17,
+          18,
+          19,
+          20
+        ],
+        "virtual_time_s": 3134.7105562319907,
+        "average_time_s": 313.47105562319905,
+        "measures": 120,
+        "clear_attempts": 11,
+        "fallback_count": 0,
+        "official_validated": false,
+        "algorithm": "ultimate200_v2",
+        "shared_measures": 12,
+        "full_scan_count": 7,
+        "uncovered_cells": 8,
+        "pending_tracks": 0,
+        "coverage_cell_m": 100.0,
+        "fixed_nodes_visited": 0,
+        "coverage_certificate": "voronoi_outer_polygon",
+        "visibility": true,
+        "joint": true,
+        "coverage_worst_m": 968.9015717043841,
+        "scan_gain": 12,
+        "optical_trial_radius": 50,
+        "phases": 6,
+        "runtime_s": 1.2816371000080835
+      },
+      "checks": {
+        "truth_containment": 152,
+        "certified_clears": 6,
+        "timing_steps": 131
+      },
+      "reconstructed_virtual_time_s": 3134.7105562319907,
+      "distance_m": 11853.552781159951,
+      "switches": 111,
+      "failed_optical_attempts": [
+        {
+          "index": 100,
+          "channel": 13,
+          "distance_to_source_m": 24.669549606364857,
+          "subsequent_same_channel": [
+            {
+              "index": 101,
+              "kind": "measure",
+              "result": "direction"
+            },
+            {
+              "index": 102,
+              "kind": "clear",
+              "result": "success"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "complete": true,
+        "worst_distance_m": 968.9015717043841,
+        "witness": [
+          -4.405364961712621e-13,
+          -1800.0
+        ],
+        "scans": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -600.0000000000006,
+            -1039.2304845413262
+          ],
+          [
+            600.0000000000001,
+            -1039.2304845413264
+          ],
+          [
+            1200.0,
+            0.0
+          ],
+          [
+            600.0000000000001,
+            1039.2304845413264
+          ],
+          [
+            -599.9999999999998,
+            1039.2304845413264
+          ],
+          [
+            -1200.0,
+            1.4695761589768238e-13
+          ]
+        ]
+      }
+    },
+    {
+      "name": "combined_failure_reproduction",
+      "seed": 1,
+      "stress": "random",
+      "count": 11,
+      "summary": {
+        "mode": "q3",
+        "status": "complete_coverage",
+        "cleared": 11,
+        "channels": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          13,
+          14,
+          15,
+          19
+        ],
+        "virtual_time_s": 3198.4414644077774,
+        "average_time_s": 290.7674058552525,
+        "measures": 126,
+        "clear_attempts": 12,
+        "fallback_count": 0,
+        "official_validated": false,
+        "algorithm": "ultimate200_v2",
+        "shared_measures": 13,
+        "full_scan_count": 8,
+        "uncovered_cells": 4,
+        "pending_tracks": 0,
+        "coverage_cell_m": 100.0,
+        "fixed_nodes_visited": 0,
+        "coverage_certificate": "voronoi_outer_polygon",
+        "visibility": true,
+        "joint": true,
+        "coverage_worst_m": 968.9015717043839,
+        "scan_gain": 12,
+        "optical_trial_radius": 50,
+        "phases": 6,
+        "runtime_s": 1.8451198000111617
+      },
+      "checks": {
+        "truth_containment": 352,
+        "certified_clears": 7,
+        "timing_steps": 138
+      },
+      "reconstructed_virtual_time_s": 3198.4414644077774,
+      "distance_m": 11947.207322038881,
+      "switches": 121,
+      "failed_optical_attempts": [
+        {
+          "index": 100,
+          "channel": 8,
+          "distance_to_source_m": 23.37392532814589,
+          "subsequent_same_channel": [
+            {
+              "index": 101,
+              "kind": "measure",
+              "result": "direction"
+            },
+            {
+              "index": 103,
+              "kind": "clear",
+              "result": "success"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "complete": true,
+        "worst_distance_m": 968.9015717043839,
+        "witness": [
+          -1378.8799976141604,
+          -1157.017697435771
+        ],
+        "scans": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            410.42417199080256,
+            1127.63114494309
+          ],
+          [
+            1313.1793117331822,
+            886.4333655779446
+          ],
+          [
+            1181.7693036146495,
+            208.3778132003164
+          ],
+          [
+            -771.3451316238472,
+            919.2533317427736
+          ],
+          [
+            -1181.7693036146495,
+            -208.37781320031655
+          ],
+          [
+            -410.4241719908023,
+            -1127.63114494309
+          ],
+          [
+            771.3451316238471,
+            -919.2533317427738
+          ]
+        ]
+      }
+    }
+  ]
+}

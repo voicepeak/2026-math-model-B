@@ -1,0 +1,22 @@
+{
+  "selected": "combo100",
+  "selection_data": "40 development cases, seeds 1..40 only",
+  "development_sources": 526,
+  "development_seconds_per_source": 229.3678174549226,
+  "pilot_m": 100,
+  "optical_trial_radius_m": 50,
+  "optical_trial_per_channel": 1,
+  "elastic_passes": 3,
+  "visibility_constraints": true,
+  "shared_bearings": true,
+  "coverage": "origin scan + continuous boundary arcs with radial convexity",
+  "coverage_arc_radius_m": 999.99,
+  "elastic_site_radial_range_m": [801, 1660],
+  "certified_clear_radius_m": 19.9,
+  "bearing_error_margin_deg": 1.005,
+  "new_holdout_seeds": "20001..20100",
+  "stress_seeds": "101..110 each of edge, cluster, minrange, bias, extreme",
+  "http_selftest_seeds": [211, 212, 213, 214, 215],
+  "official_test_calls_authorized": false,
+  "rule": "Do not tune the frozen candidate using holdout outcomes"
+}
