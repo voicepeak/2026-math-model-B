@@ -1,0 +1,1488 @@
+{
+  "source": "results/screening_all.csv",
+  "n_rows": 480,
+  "n_cols": 29,
+  "columns": {
+    "actual_cleared": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 7,
+      "categories": [
+        [
+          "13",
+          120
+        ],
+        [
+          "11",
+          80
+        ],
+        [
+          "14",
+          80
+        ],
+        [
+          "10",
+          80
+        ],
+        [
+          "15",
+          40
+        ],
+        [
+          "16",
+          40
+        ],
+        [
+          "12",
+          40
+        ]
+      ],
+      "min_group_n": 40,
+      "max_group_n": 120,
+      "small_groups_flag": false
+    },
+    "algorithm": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0
+    },
+    "average_time_s": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 510.4812964869913,
+      "median": 498.94787662346266,
+      "sd": 86.787333795174,
+      "min": 269.37809814940647,
+      "max": 729.5228556906,
+      "skewness": 0.12395455728194363,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 0,
+      "outlier_lo": 244.22476027426242,
+      "outlier_hi": 778.7445324968324,
+      "needs_log_axis": "False"
+    },
+    "clear_attempts": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 31.8,
+      "median": 23.0,
+      "sd": 24.01855580513761,
+      "min": 10.0,
+      "max": 153.0,
+      "skewness": 1.9802581772822136,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 40,
+      "outlier_lo": -17.0,
+      "outlier_hi": 71.0,
+      "needs_log_axis": "False"
+    },
+    "cleared": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 7,
+      "categories": [
+        [
+          "13",
+          120
+        ],
+        [
+          "11",
+          80
+        ],
+        [
+          "14",
+          80
+        ],
+        [
+          "10",
+          80
+        ],
+        [
+          "15",
+          40
+        ],
+        [
+          "16",
+          40
+        ],
+        [
+          "12",
+          40
+        ]
+      ],
+      "min_group_n": 40,
+      "max_group_n": 120,
+      "small_groups_flag": false
+    },
+    "coverage_certificate": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 468,
+      "missing_rate": 0.975
+    },
+    "directional": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 6,
+      "categories": [
+        [
+          "7",
+          160
+        ],
+        [
+          "6",
+          120
+        ],
+        [
+          "5",
+          80
+        ],
+        [
+          "8",
+          40
+        ],
+        [
+          "9",
+          40
+        ],
+        [
+          "3",
+          40
+        ]
+      ],
+      "min_group_n": 40,
+      "max_group_n": 160,
+      "small_groups_flag": false
+    },
+    "distance_m": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 23057.984541198068,
+      "median": 22828.45518550325,
+      "sd": 1881.0152127968581,
+      "min": 16055.247851952528,
+      "max": 29871.22117885282,
+      "skewness": 0.18552186947343727,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 2,
+      "outlier_lo": 17724.555139302647,
+      "outlier_hi": 28419.46269740405,
+      "needs_log_axis": "False"
+    },
+    "failed_clears": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 19.133333333333333,
+      "median": 10.0,
+      "sd": 23.867478011113683,
+      "min": 0.0,
+      "max": 143.0,
+      "skewness": 2.0286017746539136,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 40,
+      "outlier_lo": -30.0,
+      "outlier_hi": 58.0,
+      "needs_log_axis": false
+    },
+    "fallback_count": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 2.6458333333333335,
+      "median": 2.0,
+      "sd": 2.15659965219484,
+      "min": 0.0,
+      "max": 10.0,
+      "skewness": 0.8508391877422166,
+      "skew_label": "moderately skewed",
+      "n_outliers_iqr": 7,
+      "outlier_lo": -3.5,
+      "outlier_hi": 8.5,
+      "needs_log_axis": false
+    },
+    "full_scan_count": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 22.252083333333335,
+      "median": 22.0,
+      "sd": 1.7293354442201336,
+      "min": 13.0,
+      "max": 25.0,
+      "skewness": 0.032220051993224766,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 124,
+      "outlier_lo": 19.5,
+      "outlier_hi": 23.5,
+      "needs_log_axis": "False"
+    },
+    "measures": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 266.60833333333335,
+      "median": 263.5,
+      "sd": 36.15497744261682,
+      "min": 160.0,
+      "max": 369.0,
+      "skewness": 0.2611044243470521,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 10,
+      "outlier_lo": 174.0,
+      "outlier_hi": 358.0,
+      "needs_log_axis": "False"
+    },
+    "mesh_nodes": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 3,
+      "categories": [
+        [
+          "22",
+          192
+        ],
+        [
+          "21",
+          168
+        ],
+        [
+          "25",
+          120
+        ]
+      ],
+      "min_group_n": 120,
+      "max_group_n": 192,
+      "small_groups_flag": false
+    },
+    "mode": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0
+    },
+    "official_validated": {
+      "type": "boolean",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 1,
+      "categories": [
+        [
+          "False",
+          480
+        ]
+      ],
+      "min_group_n": 480,
+      "max_group_n": 480,
+      "small_groups_flag": false
+    },
+    "pending_nodes": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 7,
+      "categories": [
+        [
+          "0",
+          461
+        ],
+        [
+          "4",
+          7
+        ],
+        [
+          "3",
+          6
+        ],
+        [
+          "2",
+          2
+        ],
+        [
+          "6",
+          2
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "8",
+          1
+        ]
+      ],
+      "min_group_n": 1,
+      "max_group_n": 461,
+      "small_groups_flag": true
+    },
+    "pending_tracks": {
+      "type": "boolean",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 1,
+      "categories": [
+        [
+          "0",
+          480
+        ]
+      ],
+      "min_group_n": 480,
+      "max_group_n": 480,
+      "small_groups_flag": false
+    },
+    "pipeline_wall_s": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 4.465640383749148,
+      "median": 4.246421099989675,
+      "sd": 1.7887922199544004,
+      "min": 1.665800200018566,
+      "max": 13.014050199999474,
+      "skewness": 0.9516194507631593,
+      "skew_label": "moderately skewed",
+      "n_outliers_iqr": 10,
+      "outlier_lo": -0.4762192750131362,
+      "outlier_hi": 9.045578725017549,
+      "needs_log_axis": "False"
+    },
+    "recoveries": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 5,
+      "categories": [
+        [
+          "0",
+          356
+        ],
+        [
+          "2",
+          103
+        ],
+        [
+          "1",
+          13
+        ],
+        [
+          "3",
+          6
+        ],
+        [
+          "4",
+          2
+        ]
+      ],
+      "min_group_n": 2,
+      "max_group_n": 356,
+      "small_groups_flag": true
+    },
+    "route_calls": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 27.816666666666666,
+      "median": 33.0,
+      "sd": 12.570292269408208,
+      "min": 0.0,
+      "max": 40.0,
+      "skewness": -1.4403395298409285,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 96,
+      "outlier_lo": 25.0,
+      "outlier_hi": 41.0,
+      "needs_log_axis": false
+    },
+    "runtime_s": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 3.5357814724979106,
+      "median": 3.172668600018369,
+      "sd": 1.6659098185447685,
+      "min": 1.023546600015834,
+      "max": 11.336465000000317,
+      "skewness": 1.1489447722372625,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 8,
+      "outlier_lo": -1.1921552250423701,
+      "outlier_hi": 7.770801575083169,
+      "needs_log_axis": "False"
+    },
+    "seed": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 6.5,
+      "median": 6.5,
+      "sd": 3.455654045933628,
+      "min": 1.0,
+      "max": 12.0,
+      "skewness": 0.0,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 0,
+      "outlier_lo": -4.5,
+      "outlier_hi": 17.5,
+      "needs_log_axis": "False"
+    },
+    "selected_candidate": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 468,
+      "missing_rate": 0.975
+    },
+    "shared_measures": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 28.572916666666668,
+      "median": 29.0,
+      "sd": 7.994707006407553,
+      "min": 2.0,
+      "max": 52.0,
+      "skewness": -0.022854436821825353,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 4,
+      "outlier_lo": 6.5,
+      "outlier_hi": 50.5,
+      "needs_log_axis": "False"
+    },
+    "status": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0
+    },
+    "stress": {
+      "type": "unknown",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0
+    },
+    "switches": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 252.7,
+      "median": 251.0,
+      "sd": 36.28697955434502,
+      "min": 150.0,
+      "max": 355.0,
+      "skewness": 0.31628445518495335,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 9,
+      "outlier_lo": 154.5,
+      "outlier_hi": 350.5,
+      "needs_log_axis": "False"
+    },
+    "total": {
+      "type": "ordinal",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "n_unique": 7,
+      "categories": [
+        [
+          "13",
+          120
+        ],
+        [
+          "11",
+          80
+        ],
+        [
+          "14",
+          80
+        ],
+        [
+          "10",
+          80
+        ],
+        [
+          "15",
+          40
+        ],
+        [
+          "16",
+          40
+        ],
+        [
+          "12",
+          40
+        ]
+      ],
+      "min_group_n": 40,
+      "max_group_n": 120,
+      "small_groups_flag": false
+    },
+    "virtual_time_s": {
+      "type": "continuous",
+      "n_total": 480,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 480,
+      "mean": 6318.071908239613,
+      "median": 6290.7816921464355,
+      "sd": 420.3643736252837,
+      "min": 4310.049570390504,
+      "max": 7449.244235770568,
+      "skewness": -0.18124631071943262,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 6,
+      "outlier_lo": 5194.658099009518,
+      "outlier_hi": 7453.2697440154525,
+      "needs_log_axis": "False"
+    }
+  },
+  "correlation": {
+    "columns": [
+      "average_time_s",
+      "clear_attempts",
+      "distance_m",
+      "failed_clears",
+      "fallback_count",
+      "full_scan_count",
+      "measures",
+      "pipeline_wall_s",
+      "route_calls",
+      "runtime_s",
+      "seed",
+      "shared_measures",
+      "switches",
+      "virtual_time_s"
+    ],
+    "matrix": {
+      "average_time_s": {
+        "average_time_s": 1.0,
+        "clear_attempts": 0.087,
+        "distance_m": 0.149,
+        "failed_clears": 0.159,
+        "fallback_count": -0.015,
+        "full_scan_count": 0.204,
+        "measures": 0.743,
+        "pipeline_wall_s": -0.361,
+        "route_calls": -0.212,
+        "runtime_s": -0.371,
+        "seed": 0.123,
+        "shared_measures": -0.635,
+        "switches": 0.731,
+        "virtual_time_s": 0.523
+      },
+      "clear_attempts": {
+        "average_time_s": 0.087,
+        "clear_attempts": 1.0,
+        "distance_m": 0.498,
+        "failed_clears": 0.997,
+        "fallback_count": 0.548,
+        "full_scan_count": -0.074,
+        "measures": -0.212,
+        "pipeline_wall_s": 0.172,
+        "route_calls": -0.073,
+        "runtime_s": 0.146,
+        "seed": 0.086,
+        "shared_measures": -0.174,
+        "switches": -0.226,
+        "virtual_time_s": 0.507
+      },
+      "distance_m": {
+        "average_time_s": 0.149,
+        "clear_attempts": 0.498,
+        "distance_m": 1.0,
+        "failed_clears": 0.487,
+        "fallback_count": 0.281,
+        "full_scan_count": 0.031,
+        "measures": -0.222,
+        "pipeline_wall_s": -0.171,
+        "route_calls": -0.371,
+        "runtime_s": -0.196,
+        "seed": 0.003,
+        "shared_measures": -0.121,
+        "switches": -0.243,
+        "virtual_time_s": 0.866
+      },
+      "failed_clears": {
+        "average_time_s": 0.159,
+        "clear_attempts": 0.997,
+        "distance_m": 0.487,
+        "failed_clears": 1.0,
+        "fallback_count": 0.542,
+        "full_scan_count": -0.062,
+        "measures": -0.155,
+        "pipeline_wall_s": 0.146,
+        "route_calls": -0.082,
+        "runtime_s": 0.12,
+        "seed": 0.095,
+        "shared_measures": -0.222,
+        "switches": -0.169,
+        "virtual_time_s": 0.526
+      },
+      "fallback_count": {
+        "average_time_s": -0.015,
+        "clear_attempts": 0.548,
+        "distance_m": 0.281,
+        "failed_clears": 0.542,
+        "fallback_count": 1.0,
+        "full_scan_count": -0.065,
+        "measures": -0.212,
+        "pipeline_wall_s": 0.057,
+        "route_calls": -0.109,
+        "runtime_s": 0.047,
+        "seed": 0.116,
+        "shared_measures": -0.272,
+        "switches": -0.238,
+        "virtual_time_s": 0.235
+      },
+      "full_scan_count": {
+        "average_time_s": 0.204,
+        "clear_attempts": -0.074,
+        "distance_m": 0.031,
+        "failed_clears": -0.062,
+        "fallback_count": -0.065,
+        "full_scan_count": 1.0,
+        "measures": 0.511,
+        "pipeline_wall_s": 0.13,
+        "route_calls": 0.142,
+        "runtime_s": 0.253,
+        "seed": -0.037,
+        "shared_measures": -0.06,
+        "switches": 0.492,
+        "virtual_time_s": 0.276
+      },
+      "measures": {
+        "average_time_s": 0.743,
+        "clear_attempts": -0.212,
+        "distance_m": -0.222,
+        "failed_clears": -0.155,
+        "fallback_count": -0.212,
+        "full_scan_count": 0.511,
+        "measures": 1.0,
+        "pipeline_wall_s": -0.199,
+        "route_calls": 0.086,
+        "runtime_s": -0.14,
+        "seed": 0.033,
+        "shared_measures": -0.343,
+        "switches": 0.997,
+        "virtual_time_s": 0.275
+      },
+      "pipeline_wall_s": {
+        "average_time_s": -0.361,
+        "clear_attempts": 0.172,
+        "distance_m": -0.171,
+        "failed_clears": 0.146,
+        "fallback_count": 0.057,
+        "full_scan_count": 0.13,
+        "measures": -0.199,
+        "pipeline_wall_s": 1.0,
+        "route_calls": 0.29,
+        "runtime_s": 0.968,
+        "seed": -0.096,
+        "shared_measures": 0.236,
+        "switches": -0.199,
+        "virtual_time_s": -0.224
+      },
+      "route_calls": {
+        "average_time_s": -0.212,
+        "clear_attempts": -0.073,
+        "distance_m": -0.371,
+        "failed_clears": -0.082,
+        "fallback_count": -0.109,
+        "full_scan_count": 0.142,
+        "measures": 0.086,
+        "pipeline_wall_s": 0.29,
+        "route_calls": 1.0,
+        "runtime_s": 0.384,
+        "seed": -0.017,
+        "shared_measures": 0.198,
+        "switches": 0.077,
+        "virtual_time_s": -0.299
+      },
+      "runtime_s": {
+        "average_time_s": -0.371,
+        "clear_attempts": 0.146,
+        "distance_m": -0.196,
+        "failed_clears": 0.12,
+        "fallback_count": 0.047,
+        "full_scan_count": 0.253,
+        "measures": -0.14,
+        "pipeline_wall_s": 0.968,
+        "route_calls": 0.384,
+        "runtime_s": 1.0,
+        "seed": -0.101,
+        "shared_measures": 0.276,
+        "switches": -0.144,
+        "virtual_time_s": -0.22
+      },
+      "seed": {
+        "average_time_s": 0.123,
+        "clear_attempts": 0.086,
+        "distance_m": 0.003,
+        "failed_clears": 0.095,
+        "fallback_count": 0.116,
+        "full_scan_count": -0.037,
+        "measures": 0.033,
+        "pipeline_wall_s": -0.096,
+        "route_calls": -0.017,
+        "runtime_s": -0.101,
+        "seed": 1.0,
+        "shared_measures": -0.112,
+        "switches": 0.029,
+        "virtual_time_s": 0.033
+      },
+      "shared_measures": {
+        "average_time_s": -0.635,
+        "clear_attempts": -0.174,
+        "distance_m": -0.121,
+        "failed_clears": -0.222,
+        "fallback_count": -0.272,
+        "full_scan_count": -0.06,
+        "measures": -0.343,
+        "pipeline_wall_s": 0.236,
+        "route_calls": 0.198,
+        "runtime_s": 0.276,
+        "seed": -0.112,
+        "shared_measures": 1.0,
+        "switches": -0.328,
+        "virtual_time_s": -0.308
+      },
+      "switches": {
+        "average_time_s": 0.731,
+        "clear_attempts": -0.226,
+        "distance_m": -0.243,
+        "failed_clears": -0.169,
+        "fallback_count": -0.238,
+        "full_scan_count": 0.492,
+        "measures": 0.997,
+        "pipeline_wall_s": -0.199,
+        "route_calls": 0.077,
+        "runtime_s": -0.144,
+        "seed": 0.029,
+        "shared_measures": -0.328,
+        "switches": 1.0,
+        "virtual_time_s": 0.253
+      },
+      "virtual_time_s": {
+        "average_time_s": 0.523,
+        "clear_attempts": 0.507,
+        "distance_m": 0.866,
+        "failed_clears": 0.526,
+        "fallback_count": 0.235,
+        "full_scan_count": 0.276,
+        "measures": 0.275,
+        "pipeline_wall_s": -0.224,
+        "route_calls": -0.299,
+        "runtime_s": -0.22,
+        "seed": 0.033,
+        "shared_measures": -0.308,
+        "switches": 0.253,
+        "virtual_time_s": 1.0
+      }
+    },
+    "pairs_sorted": [
+      {
+        "a": "clear_attempts",
+        "b": "failed_clears",
+        "r": 0.9970579445006975,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "measures",
+        "b": "switches",
+        "r": 0.996518589740232,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "runtime_s",
+        "r": 0.9680352434246214,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "distance_m",
+        "b": "virtual_time_s",
+        "r": 0.8656625867323706,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "average_time_s",
+        "b": "measures",
+        "r": 0.7427304761758909,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "average_time_s",
+        "b": "switches",
+        "r": 0.7308755071422134,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "average_time_s",
+        "b": "shared_measures",
+        "r": -0.635436464071904,
+        "magnitude": "strong"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "fallback_count",
+        "r": 0.5480133809125868,
+        "magnitude": "strong"
+      },
+      {
+        "a": "failed_clears",
+        "b": "fallback_count",
+        "r": 0.5421401137077344,
+        "magnitude": "strong"
+      },
+      {
+        "a": "failed_clears",
+        "b": "virtual_time_s",
+        "r": 0.525749994986923,
+        "magnitude": "strong"
+      },
+      {
+        "a": "average_time_s",
+        "b": "virtual_time_s",
+        "r": 0.5225905023783248,
+        "magnitude": "strong"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "measures",
+        "r": 0.5114819572728558,
+        "magnitude": "strong"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "virtual_time_s",
+        "r": 0.5073912671132027,
+        "magnitude": "strong"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "distance_m",
+        "r": 0.49774638647457875,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "switches",
+        "r": 0.4918861164666042,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "distance_m",
+        "b": "failed_clears",
+        "r": 0.4868133914146902,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "route_calls",
+        "b": "runtime_s",
+        "r": 0.38434186597245995,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "average_time_s",
+        "b": "runtime_s",
+        "r": -0.3710526776895978,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "distance_m",
+        "b": "route_calls",
+        "r": -0.37058296982970906,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "average_time_s",
+        "b": "pipeline_wall_s",
+        "r": -0.3612429227834844,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "measures",
+        "b": "shared_measures",
+        "r": -0.34306860199101424,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "shared_measures",
+        "b": "switches",
+        "r": -0.32772449954119764,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "shared_measures",
+        "b": "virtual_time_s",
+        "r": -0.3081068874479627,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "route_calls",
+        "b": "virtual_time_s",
+        "r": -0.29944950162803763,
+        "magnitude": "weak"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "route_calls",
+        "r": 0.28987679604880096,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "fallback_count",
+        "r": 0.2806332307406661,
+        "magnitude": "weak"
+      },
+      {
+        "a": "runtime_s",
+        "b": "shared_measures",
+        "r": 0.2764032944121197,
+        "magnitude": "weak"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "virtual_time_s",
+        "r": 0.2761823362012227,
+        "magnitude": "weak"
+      },
+      {
+        "a": "measures",
+        "b": "virtual_time_s",
+        "r": 0.27492482867761986,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "shared_measures",
+        "r": -0.2723946109978527,
+        "magnitude": "weak"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "runtime_s",
+        "r": 0.25323497741442536,
+        "magnitude": "weak"
+      },
+      {
+        "a": "switches",
+        "b": "virtual_time_s",
+        "r": 0.2525036652651807,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "switches",
+        "r": -0.24261831177937515,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "switches",
+        "r": -0.23793607855144644,
+        "magnitude": "weak"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "shared_measures",
+        "r": 0.2360138187133753,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "virtual_time_s",
+        "r": 0.23462768491453834,
+        "magnitude": "weak"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "switches",
+        "r": -0.22559483448596435,
+        "magnitude": "weak"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "virtual_time_s",
+        "r": -0.22363094421377158,
+        "magnitude": "weak"
+      },
+      {
+        "a": "failed_clears",
+        "b": "shared_measures",
+        "r": -0.2216273659764109,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "measures",
+        "r": -0.22150851474211256,
+        "magnitude": "weak"
+      },
+      {
+        "a": "runtime_s",
+        "b": "virtual_time_s",
+        "r": -0.21988360740702617,
+        "magnitude": "weak"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "measures",
+        "r": -0.21173626585282931,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "measures",
+        "r": -0.211563618083011,
+        "magnitude": "weak"
+      },
+      {
+        "a": "average_time_s",
+        "b": "route_calls",
+        "r": -0.2115039257757495,
+        "magnitude": "weak"
+      },
+      {
+        "a": "average_time_s",
+        "b": "full_scan_count",
+        "r": 0.2044406117376207,
+        "magnitude": "weak"
+      },
+      {
+        "a": "measures",
+        "b": "pipeline_wall_s",
+        "r": -0.19931414341408893,
+        "magnitude": "weak"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "switches",
+        "r": -0.19910911521682176,
+        "magnitude": "weak"
+      },
+      {
+        "a": "route_calls",
+        "b": "shared_measures",
+        "r": 0.19798324910913676,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "runtime_s",
+        "r": -0.19632251924670407,
+        "magnitude": "weak"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "shared_measures",
+        "r": -0.17350848538293664,
+        "magnitude": "weak"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "pipeline_wall_s",
+        "r": 0.1723545380440006,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "pipeline_wall_s",
+        "r": -0.17133809930062133,
+        "magnitude": "weak"
+      },
+      {
+        "a": "failed_clears",
+        "b": "switches",
+        "r": -0.1692069757522564,
+        "magnitude": "weak"
+      },
+      {
+        "a": "average_time_s",
+        "b": "failed_clears",
+        "r": 0.15908724505109786,
+        "magnitude": "weak"
+      },
+      {
+        "a": "failed_clears",
+        "b": "measures",
+        "r": -0.15488105359790552,
+        "magnitude": "weak"
+      },
+      {
+        "a": "average_time_s",
+        "b": "distance_m",
+        "r": 0.14897518668856063,
+        "magnitude": "weak"
+      },
+      {
+        "a": "failed_clears",
+        "b": "pipeline_wall_s",
+        "r": 0.1464554148524638,
+        "magnitude": "weak"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "runtime_s",
+        "r": 0.14635493186487367,
+        "magnitude": "weak"
+      },
+      {
+        "a": "runtime_s",
+        "b": "switches",
+        "r": -0.1435720650399609,
+        "magnitude": "weak"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "route_calls",
+        "r": 0.14205674949993577,
+        "magnitude": "weak"
+      },
+      {
+        "a": "measures",
+        "b": "runtime_s",
+        "r": -0.13953191530498374,
+        "magnitude": "weak"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "pipeline_wall_s",
+        "r": 0.1298868498054557,
+        "magnitude": "weak"
+      },
+      {
+        "a": "average_time_s",
+        "b": "seed",
+        "r": 0.12344364870576637,
+        "magnitude": "weak"
+      },
+      {
+        "a": "distance_m",
+        "b": "shared_measures",
+        "r": -0.12054420073699358,
+        "magnitude": "weak"
+      },
+      {
+        "a": "failed_clears",
+        "b": "runtime_s",
+        "r": 0.11975738457016244,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "seed",
+        "r": 0.11625530898692335,
+        "magnitude": "weak"
+      },
+      {
+        "a": "seed",
+        "b": "shared_measures",
+        "r": -0.11210351430394926,
+        "magnitude": "weak"
+      },
+      {
+        "a": "fallback_count",
+        "b": "route_calls",
+        "r": -0.10929064327008416,
+        "magnitude": "weak"
+      },
+      {
+        "a": "runtime_s",
+        "b": "seed",
+        "r": -0.10053596709649386,
+        "magnitude": "weak"
+      },
+      {
+        "a": "pipeline_wall_s",
+        "b": "seed",
+        "r": -0.0958169404705671,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "failed_clears",
+        "b": "seed",
+        "r": 0.09507214256418085,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "average_time_s",
+        "b": "clear_attempts",
+        "r": 0.08692654781367389,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "measures",
+        "b": "route_calls",
+        "r": 0.0864903207558887,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "seed",
+        "r": 0.08642521997126203,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "failed_clears",
+        "b": "route_calls",
+        "r": -0.08199328496386742,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "route_calls",
+        "b": "switches",
+        "r": 0.07711837797176942,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "full_scan_count",
+        "r": -0.07352301447114501,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "clear_attempts",
+        "b": "route_calls",
+        "r": -0.07336892627014174,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "fallback_count",
+        "b": "full_scan_count",
+        "r": -0.06501586534733429,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "failed_clears",
+        "b": "full_scan_count",
+        "r": -0.06201780795538924,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "shared_measures",
+        "r": -0.06014755597146182,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "fallback_count",
+        "b": "pipeline_wall_s",
+        "r": 0.056710541483460386,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "fallback_count",
+        "b": "runtime_s",
+        "r": 0.04725573442242315,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "full_scan_count",
+        "b": "seed",
+        "r": -0.03720528141851256,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "seed",
+        "b": "virtual_time_s",
+        "r": 0.03269356742642548,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "measures",
+        "b": "seed",
+        "r": 0.03255030681509854,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "distance_m",
+        "b": "full_scan_count",
+        "r": 0.030978553204493605,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "seed",
+        "b": "switches",
+        "r": 0.028536074257265523,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "route_calls",
+        "b": "seed",
+        "r": -0.016869257589917884,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "average_time_s",
+        "b": "fallback_count",
+        "r": -0.015061263189212607,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "distance_m",
+        "b": "seed",
+        "r": 0.0026120594339138843,
+        "magnitude": "negligible"
+      }
+    ]
+  },
+  "group_summary": {
+    "by": [
+      "algorithm"
+    ],
+    "n_groups": 40,
+    "min_n_per_group": 12,
+    "max_n_per_group": 12,
+    "median_n_per_group": 12,
+    "small_groups_flag": false,
+    "tiny_groups_flag": false,
+    "per_group_counts": [
+      [
+        "active21",
+        12
+      ],
+      [
+        "active_default",
+        12
+      ],
+      [
+        "active_defer",
+        12
+      ],
+      [
+        "active_full",
+        12
+      ],
+      [
+        "active_half",
+        12
+      ],
+      [
+        "active_narrow",
+        12
+      ],
+      [
+        "active_twice",
+        12
+      ],
+      [
+        "active_wide",
+        12
+      ],
+      [
+        "defer21",
+        12
+      ],
+      [
+        "defer22",
+        12
+      ],
+      [
+        "defer25",
+        12
+      ],
+      [
+        "defer_greedy22",
+        12
+      ],
+      [
+        "defer_greedy25",
+        12
+      ],
+      [
+        "greedy21",
+        12
+      ],
+      [
+        "greedy22",
+        12
+      ],
+      [
+        "greedy25",
+        12
+      ],
+      [
+        "inner21",
+        12
+      ],
+      [
+        "inner22",
+        12
+      ],
+      [
+        "inner25",
+        12
+      ],
+      [
+        "near21",
+        12
+      ]
+    ]
+  },
+  "warnings": [
+    "列 'coverage_certificate' 缺失率 98% — 画图前考虑是否填补、剔除、或在图注中交代。",
+    "列 'pending_nodes' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'recoveries' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。",
+    "列 'selected_candidate' 缺失率 98% — 画图前考虑是否填补、剔除、或在图注中交代。"
+  ],
+  "suggestions": [
+    "分类 vs 连续，样本量充足 → 箱线图 / 小提琴图，或带误差棒的柱状图（误差棒说明 SD/SEM/CI）",
+    "≥3 个连续变量 → 相关性热力图（['average_time_s', 'clear_attempts', 'distance_m', 'failed_clears', 'fallback_count']）或 pairplot 散点矩阵",
+    "分类维度组合数 = 216090（actual_cleared, cleared, directional, mesh_nodes, official_validated, pending_nodes, pending_tracks, recoveries, total 全交叉），**一张图塞不下**——建议按某一维拆成多面板，或选择子集。",
+    "clear_attempts 高度偏态（skew=1.98）→ 考虑对数变换或小提琴图代替均值柱图",
+    "failed_clears 高度偏态（skew=2.03）→ 考虑对数变换或小提琴图代替均值柱图",
+    "route_calls 高度偏态（skew=-1.44）→ 考虑对数变换或小提琴图代替均值柱图",
+    "runtime_s 高度偏态（skew=1.15）→ 考虑对数变换或小提琴图代替均值柱图"
+  ]
+}

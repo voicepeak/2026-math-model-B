@@ -1,0 +1,311 @@
+{
+  "scope": "P1 committed coverage tour and current experiment dispatch; carries forward prior unchanged geometry/particle reviews",
+  "status": "PASS",
+  "input_sha256": {
+    "strategy_route.py": "593a05be5c23b66981b762de975f3fa4b9be741e3e0f8873eb5947f821325b90",
+    "strategy_particle.py": "32102a9b0777318aaa6c8dbc9475e772081c9b764fdb3c9a766b3b8149d83e38",
+    "strategy_ring21.py": "1388f9fce7a92a19b6906721dead6363b07adaae822d6e3e149200c84e8c06c6",
+    "strategy_explore.py": "2159cea09edd4bce0e94cb7f410061f17409a472dd3601a2ccfa699d7e83ec8c",
+    "experiment.py": "03019ff9d068ab2f1b0a5e9738b8cc231e248a463e05ad8f7b6b12d428b8bc5f",
+    "strategy.py": "8b9f932d65b3b80e39ff84d2e65d79bfa353909a28538f8d62b7ed08540bded0",
+    "coverage_certificate.py": "ff8aed3838fedfa16a891777ad0d3bd15d728100e1be693a4e2bc0cfe4b4958c",
+    "routing.py": "42273466de182aa4708ca8d4903c499e04693c6534ab9687223cdb644a70ecf4",
+    "geometry.py": "99d405d4ec6d1e7a2e87129f6f0eebc5bb6c32d3a514da642d22d7ea34822c4e",
+    "robot_core.py": "ba59becdf95fdfc858a66b87ff5b8c11380d02dfb27e595f939f00a3d25d4e71",
+    "benchmark.py": "719badd6b204dbc8f6e2d70c3cd8db9d3539cc27c0628ad000485da93de43a85"
+  },
+  "commands": [
+    {
+      "command": "python experiment.py --seeds 3 --stress random --configs tour150,tour350,tour700,tour_eager,tour25,previous,ring22,particle21 --out p1_tour",
+      "exit_code": 0
+    },
+    {
+      "description": "Independent per-action timing/clear audit; 6 marginal-detour/wait_views/empty-nodes branch checks; all registered experiment name dispatch checks",
+      "exit_code": 0
+    }
+  ],
+  "cases": [
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "tour150",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 488.2115517619692
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "tour350",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 476.01864810073306
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "tour700",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 489.7063276867754
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "tour_eager",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 530.5993134966775
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "tour25",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 489.4821135924373
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "previous",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 466.17136543992626
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "ring22",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 477.12519222090697
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "particle21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 455.1004876007883
+    }
+  ],
+  "independent_time_max_error_s": 0.0,
+  "dispatch": {
+    "previous": {
+      "class": "strategy_final",
+      "config": {}
+    },
+    "ring22": {
+      "class": "strategy_explore",
+      "config": {}
+    },
+    "defer22": {
+      "class": "strategy_explore",
+      "config": {
+        "schedule": "defer"
+      }
+    },
+    "defer25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "schedule": "defer"
+      }
+    },
+    "inner22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "schedule": "inner"
+      }
+    },
+    "near22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "schedule": "near"
+      }
+    },
+    "greedy22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "sweep_kind": "greedy"
+      }
+    },
+    "probe22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "sweep_kind": "probe"
+      }
+    },
+    "probe_greedy22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "sweep_kind": "probe_greedy"
+      }
+    },
+    "defer_greedy22": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring22",
+        "schedule": "defer",
+        "sweep_kind": "greedy"
+      }
+    },
+    "inner25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "schedule": "inner"
+      }
+    },
+    "near25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "schedule": "near"
+      }
+    },
+    "greedy25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "sweep_kind": "greedy"
+      }
+    },
+    "probe25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "sweep_kind": "probe"
+      }
+    },
+    "probe_greedy25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "sweep_kind": "probe_greedy"
+      }
+    },
+    "defer_greedy25": {
+      "class": "strategy_explore",
+      "config": {
+        "layout_kind": "ring25",
+        "schedule": "defer",
+        "sweep_kind": "greedy"
+      }
+    },
+    "ring21": {
+      "class": "strategy_ring21",
+      "config": {}
+    },
+    "defer21": {
+      "class": "strategy_ring21",
+      "config": {
+        "schedule": "defer"
+      }
+    },
+    "inner21": {
+      "class": "strategy_ring21",
+      "config": {
+        "schedule": "inner"
+      }
+    },
+    "near21": {
+      "class": "strategy_ring21",
+      "config": {
+        "schedule": "near"
+      }
+    },
+    "greedy21": {
+      "class": "strategy_ring21",
+      "config": {
+        "sweep_kind": "greedy"
+      }
+    },
+    "particle21": {
+      "class": "strategy_particle",
+      "config": {}
+    },
+    "particle_defer21": {
+      "class": "strategy_particle",
+      "config": {
+        "schedule": "defer"
+      }
+    },
+    "particle22": {
+      "class": "strategy_particle",
+      "config": {
+        "layout_kind": "ring22"
+      }
+    },
+    "particle25": {
+      "class": "strategy_particle",
+      "config": {
+        "layout_kind": "ring25"
+      }
+    },
+    "particle3": {
+      "class": "strategy_particle",
+      "config": {
+        "particle_tries": 3
+      }
+    },
+    "particle_plain": {
+      "class": "strategy_particle",
+      "config": {
+        "negative_info": false
+      }
+    },
+    "tour150": {
+      "class": "strategy_route",
+      "config": {
+        "detour_limit": 150.0
+      }
+    },
+    "tour350": {
+      "class": "strategy_route",
+      "config": {
+        "detour_limit": 350.0
+      }
+    },
+    "tour700": {
+      "class": "strategy_route",
+      "config": {
+        "detour_limit": 700.0
+      }
+    },
+    "tour_eager": {
+      "class": "strategy_route",
+      "config": {
+        "wait_views": false
+      }
+    },
+    "tour25": {
+      "class": "strategy_route",
+      "config": {
+        "tour_layout": "ring25"
+      }
+    }
+  },
+  "branch_checks": 6,
+  "semantic_review": {
+    "termination": "Initial run scans/removes origin. Tour is a permutation of all remaining distinct certified nodes; each selected scan removes exactly that node. Target handling clears or explicitly fails within bounded attempts/fallback. Once scans exhausted, inherited next_job admits all residual targets regardless wait_views.",
+    "truth": "Only public positions, tracked bearing polygons and observation counts affect jobs.",
+    "coverage": "No heuristic deletes unseen nodes; tour25 uses previously proved ring25 and other tour configurations use independently proved ring21.",
+    "regression": "previous, ring22 and particle21 reproduce prior seed3 random scientific metrics exactly under new dispatch."
+  },
+  "findings": {
+    "P0": [],
+    "P1": [],
+    "P2": [
+      "detour_limit is a geometric centre-insertion proxy in metres, not a bound on actual engagement travel: the localizer can visit additional measurement/sweep points. Label it accordingly.",
+      "No fixed-tour configuration in this minimal case reaches350; global comparison still required."
+    ]
+  },
+  "rework": "None for P1; full evaluation/figures/freeze/P2 required before final delivery."
+}

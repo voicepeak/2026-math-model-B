@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "reviewer": "q4_p2_verification",
+  "completed_at_utc": "2026-09-12T18:03:47.002604+00:00",
+  "scope": "Independent P2 full offline reproduction and evidence/figure audit; not official simulator validation or proof of full online global optimum",
+  "command": "python reproduce.py",
+  "exit_code": 0,
+  "frozen_files_verified": 51,
+  "scientific_fingerprints_verified": 14,
+  "reexecuted_runs": 440,
+  "screening_verified": {
+    "configurations": 31,
+    "paired_seeds_per_configuration": 10,
+    "finalists": 4,
+    "development_seeds_per_finalist": 40,
+    "frozen_selection_inputs_and_scores_match": true
+  },
+  "metrics": {
+    "development": {
+      "scenarios": 40,
+      "sources": 526,
+      "baseline_s_per_source": 1257.6756577855394,
+      "candidate_s_per_source": 468.50807432765254,
+      "reduction_percent": 62.74810032082666,
+      "wins": 40
+    },
+    "holdout": {
+      "scenarios": 100,
+      "sources": 1285,
+      "baseline_s_per_source": 1254.4585615082563,
+      "candidate_s_per_source": 485.97588024371174,
+      "reduction_percent": 61.26010893022924,
+      "wins": 100
+    },
+    "stress": {
+      "scenarios": 80,
+      "sources": 1024,
+      "baseline_s_per_source": 1311.9042239616888,
+      "candidate_s_per_source": 509.87925118937704,
+      "reduction_percent": 61.134415007092244,
+      "wins": 80
+    }
+  },
+  "independent_stdlib_bootstrap_12000_95_percent": [
+    60.62242742895253,
+    61.86281699255359
+  ],
+  "reported_numpy_bootstrap_4000_95_percent": [
+    60.636746000758535,
+    61.880207636563235
+  ],
+  "max_aggregate_time_error_s": 1.0913936421275139e-10,
+  "independently_reaudited_trace_files": [
+    "results/trace_original_random_1.json",
+    "results/trace_candidate_random_1.json",
+    "results/trace_original_random_30001.json",
+    "results/trace_candidate_random_30001.json",
+    "results/trace_original_directed_101.json",
+    "results/trace_candidate_directed_101.json",
+    "results/trace_original_edge_101.json",
+    "results/trace_candidate_edge_101.json",
+    "results/trace_original_tangent_101.json",
+    "results/trace_candidate_tangent_101.json",
+    "results/trace_original_cluster_101.json",
+    "results/trace_candidate_cluster_101.json",
+    "results/trace_original_minrange_101.json",
+    "results/trace_candidate_minrange_101.json",
+    "results/trace_original_bias_101.json",
+    "results/trace_candidate_bias_101.json",
+    "results/trace_original_extreme_101.json",
+    "results/trace_candidate_extreme_101.json",
+    "results/trace_original_omni_101.json",
+    "results/trace_candidate_omni_101.json"
+  ],
+  "independently_reaudited_actions": 12350,
+  "independently_reaudited_clear_certificates": 57,
+  "max_action_time_error_s": 0,
+  "negative_controls_rejected": [
+    "missing",
+    "duplicate",
+    "wrong_seed",
+    "incorrect_time",
+    "not_cleared"
+  ],
+  "scientific_tamper_detected": true,
+  "wall_clock_metadata_allowed_to_vary": true,
+  "interruption_original_350_records_preserved": true,
+  "interruption_failure_retained_and_disclosed": true,
+  "visual_review": {
+    "status": "PASS",
+    "actual_color_images_viewed": 9,
+    "actual_grayscale_images_viewed": 9,
+    "regenerated_pixel_hashes_match_viewed": true,
+    "unchanged_pixels_from_initial_review": 16,
+    "changed_images_reinspected_after_regeneration": 2,
+    "notes": "No clipped labels, misleading axes or unreadable main comparisons; thin small action components are secondary to the clear travel-time contrast."
+  },
+  "fixed_scan_route_primal_length_checked_m": 17942.133272974348,
+  "full_online_global_optimum_claimed": false,
+  "official_simulator_validated": false,
+  "reproduction_subcommands": [
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "ring_certificate.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "utils/check_env.py",
+        "--features",
+        "data",
+        "visualization",
+        "optimization"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "evaluate_final.py",
+        "--phase",
+        "development",
+        "--workers",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "evaluate_final.py",
+        "--phase",
+        "holdout",
+        "--workers",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "evaluate_final.py",
+        "--phase",
+        "stress",
+        "--workers",
+        "4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "http_selftest.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "analyze_results.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "build_report.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "utils/check_figure.py",
+        "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_global_search\\figures\\*.svg",
+        "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_global_search\\figures\\*.png",
+        "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_global_search\\figures\\_qa\\*.png",
+        "--strict"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "utils/figure_audit.py",
+        "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_global_search\\figures",
+        "--questions",
+        "q4",
+        "--strict"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "frozen_manifest_sha256": "2a9df6a3fdfba12f4ec0c15a60afb18803be8528c82d9841aebd510236a0fec2",
+  "reproduction_log_sha256": "5c2eaa89b9791dd48cffdfbf7297f2d34e8068d77e679fe8ea202140cec07066",
+  "manifest_written": true,
+  "environment_recovery": {
+    "cause": "The original work/pydeps directory was unreadable to the QA sandbox token (WinError 5), causing namespace-only matplotlib import with no use attribute. A shared-ACL copy was created at work/q4_review_deps; frozen scientific files were unchanged.",
+    "verified_imports": {
+      "matplotlib": {
+        "version": "3.11.2",
+        "file": "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\work\\q4_review_deps\\matplotlib\\__init__.py"
+      },
+      "numpy": {
+        "version": "2.5.3",
+        "file": "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\work\\q4_review_deps\\numpy\\__init__.py"
+      },
+      "scipy": {
+        "version": "1.18.1",
+        "file": "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\work\\q4_review_deps\\scipy\\__init__.py"
+      }
+    },
+    "matplotlib_config_dir": "work/p2_mplconfig",
+    "preserved_failed_attempts": [
+      {
+        "command": "python reproduce.py",
+        "exit_code": 1,
+        "log": "results/reproduction_full_p2_first_attempt.json",
+        "completed_offline_runs_before_plot_import_failure": 440
+      },
+      {
+        "command": "python reproduce.py --verify-only",
+        "exit_code": 1,
+        "log": "results/reproduction_p2_verify_access_failure.json",
+        "completed_offline_runs_before_plot_import_failure": 12
+      }
+    ],
+    "final_full_reproduction_exit_code": 0
+  },
+  "issues": [],
+  "nonblocking_observations": [
+    "The equal-score ring_multi and ring_exact rows can swap order in the algorithm comparison figure because sorting starts from a set. Values and conclusions are unchanged; both newly generated color and grayscale versions were viewed again."
+  ]
+}

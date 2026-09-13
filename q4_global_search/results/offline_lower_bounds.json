@@ -1,0 +1,30 @@
+{
+  "scope": "Synthetic, full-information relaxation; not an attainable online policy.",
+  "proof": "L_online >= max(0, L_exact_center_path - 40*N); T >= L_online/5 + 5*N.",
+  "rows": [
+    {
+      "seed": 1,
+      "total": 11,
+      "center_open_path_optimal_m": 9273.542447257701,
+      "mst_m": 7927.263914405003,
+      "oracle_lower_bound_s": 1821.7084894515403,
+      "oracle_lower_bound_s_per_source": 165.60986267741276
+    },
+    {
+      "seed": 2,
+      "total": 14,
+      "center_open_path_optimal_m": 9896.891489281743,
+      "mst_m": 9438.352113638448,
+      "oracle_lower_bound_s": 1937.3782978563486,
+      "oracle_lower_bound_s_per_source": 138.38416413259634
+    },
+    {
+      "seed": 3,
+      "total": 13,
+      "center_open_path_optimal_m": 8964.344599869004,
+      "mst_m": 7537.071554506944,
+      "oracle_lower_bound_s": 1753.8689199738008,
+      "oracle_lower_bound_s_per_source": 134.91299384413853
+    }
+  ]
+}

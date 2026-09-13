@@ -1,0 +1,70 @@
+{
+  "scope": "P1 incremental fixed ring21 coverage layout; inherited solver/scheduling from prior P1",
+  "status": "PASS",
+  "input_sha256": {
+    "strategy_ring21.py": "1388f9fce7a92a19b6906721dead6363b07adaae822d6e3e149200c84e8c06c6",
+    "strategy_explore.py": "2159cea09edd4bce0e94cb7f410061f17409a472dd3601a2ccfa699d7e83ec8c",
+    "coverage_certificate.py": "ff8aed3838fedfa16a891777ad0d3bd15d728100e1be693a4e2bc0cfe4b4958c",
+    "experiment.py": "7ad1e4511a2106c5c13d69af9e3315a299413e4bff68b96aa7613c08e85de7d2",
+    "results/p1_exact_coverage_audit.py": "d2e4da8ce7462e990ad88c6080783f8e4fac4a8d9cc1e36bb110abbe10bd2b7a"
+  },
+  "command": {
+    "description": "Import p1_exact_coverage_audit, replace layout provider with nodes21; experiment.Explore=ring21 Strategy, joint21={},defer21={schedule:defer}; seed3 random/edge",
+    "exit_code": 0
+  },
+  "coverage": {
+    "status": "PASS",
+    "nodes": 21,
+    "checked": 5212,
+    "passed": 2654,
+    "max_depth": 12,
+    "arithmetic": "Fraction exact represented coordinates",
+    "outer_domain_radial_margin_m": 1e-06,
+    "distance_limit_m": 1000
+  },
+  "cases": [
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "joint21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 460.1400668212593
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "defer21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 475.7767640391526
+    },
+    {
+      "seed": 3,
+      "stress": "edge",
+      "algorithm": "joint21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 562.8575453247823
+    },
+    {
+      "seed": 3,
+      "stress": "edge",
+      "algorithm": "defer21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 691.860005291751
+    }
+  ],
+  "independent_time_max_error_s": 0.0,
+  "findings": {
+    "P0": [],
+    "P1": [],
+    "P2": [
+      "Constructor computes inherited ring22 certificate before replacing nodes and computing ring21 certificate. This is extra initialization work only, not a correctness issue.",
+      "This minimal run does not establish a 350 s/source result or a globally optimal layout."
+    ]
+  },
+  "semantic_review": "Only fixed public geometry layout is replaced. Truth is not accessed. Same inherited finite scan/engage mechanisms and no_signal behavior already reviewed. Inflated outer 96-gon is strictly covering by exact rational edge-distance checks; all 2654 accepted tiles are exactly contained in the hull of sites within1000m of every vertex.",
+  "rework": "No blocking issue; substantive solver changes require recheck; P2 required for final deliverable."
+}

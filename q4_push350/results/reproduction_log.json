@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "utils/check_env.py",
+      "--features",
+      "data",
+      "visualization",
+      "optimization"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"features\": [\n    \"data\",\n    \"visualization\",\n    \"optimization\"\n  ],\n  \"python\": \"3.12.14\",\n  \"installed\": {\n    \"numpy\": \"2.5.3\",\n    \"pandas\": \"3.0.1\",\n    \"matplotlib\": \"3.11.2\",\n    \"scipy\": \"1.18.1\"\n  },\n  \"missing\": [],\n  \"install_command\": null\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "results/p1_exact_coverage_audit.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"PASS\", \"nodes\": 22, \"checked\": 5566, \"passed\": 2831, \"max_depth\": 12, \"arithmetic\": \"Fraction exact represented coordinates\", \"outer_domain_radial_margin_m\": 1e-06, \"distance_limit_m\": 1000}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "evaluate_final.py",
+      "--phase",
+      "development"
+    ],
+    "exit_code": 0,
+    "stdout": "development 20 / 80\ndevelopment 40 / 80\ndevelopment 60 / 80\ndevelopment 80 / 80\noriginal 468.50807432765254\ncandidate 456.2625172561428\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "evaluate_final.py",
+      "--phase",
+      "holdout"
+    ],
+    "exit_code": 0,
+    "stdout": "holdout 20 / 200\nholdout 40 / 200\nholdout 60 / 200\nholdout 80 / 200\nholdout 100 / 200\nholdout 120 / 200\nholdout 140 / 200\nholdout 160 / 200\nholdout 180 / 200\nholdout 200 / 200\noriginal 468.52457748610624\ncandidate 449.90165562039846\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "evaluate_final.py",
+      "--phase",
+      "stress"
+    ],
+    "exit_code": 0,
+    "stdout": "stress 20 / 160\nstress 40 / 160\nstress 60 / 160\nstress 80 / 160\nstress 100 / 160\nstress 120 / 160\nstress 140 / 160\nstress 160 / 160\noriginal 531.9259745614693\ncandidate 544.5038634961709\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "http_selftest.py"
+    ],
+    "exit_code": 0,
+    "stdout": "17 10 6120.737558\n29 16 5586.329122\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "analyze_results.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"development\": {\n    \"scenarios\": 40,\n    \"sources\": 526,\n    \"baseline_s_per_source\": 468.50807432765254,\n    \"candidate_s_per_source\": 456.2625172561428,\n    \"reduction_percent\": 2.6137344781267835,\n    \"wins\": 25,\n    \"candidate_max_local_wall_s\": 5.261760499968659,\n    \"baseline_failed_clears\": 769,\n    \"candidate_failed_clears\": 142\n  },\n  \"holdout\": {\n    \"scenarios\": 100,\n    \"sources\": 1321,\n    \"baseline_s_per_source\": 468.52457748610624,\n    \"candidate_s_per_source\": 449.90165562039846,\n    \"reduction_percent\": 3.97480148546957,\n    \"wins\": 77,\n    \"candidate_max_local_wall_s\": 5.487622999993619,\n    \"baseline_failed_clears\": 2456,\n    \"candidate_failed_clears\": 504,\n    \"paired_bootstrap_95_percent\": [\n      2.71917284867854,\n      5.140788543693506\n    ]\n  },\n  \"stress\": {\n    \"scenarios\": 80,\n    \"sources\": 1008,\n    \"baseline_s_per_source\": 531.9259745614693,\n    \"candidate_s_per_source\": 544.5038634961709,\n    \"reduction_percent\": -2.36459386008947,\n    \"wins\": 42,\n    \"candidate_max_local_wall_s\": 5.4315031000296585,\n    \"baseline_failed_clears\": 2374,\n    \"candidate_failed_clears\": 1096\n  },\n  \"all\": {\n    \"scenarios\": 220,\n    \"sources\": 2855,\n    \"baseline_s_per_source\": 490.9063384635561,\n    \"candidate_s_per_source\": 484.47427865338625,\n    \"reduction_percent\": 1.310241752082686,\n    \"wins\": 144,\n    \"candidate_max_local_wall_s\": 5.487622999993619,\n    \"baseline_failed_clears\": 5599,\n    \"candidate_failed_clears\": 1742\n  },\n  \"stress_groups\": {\n    \"bias\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 539.1336135576735,\n      \"candidate_s_per_source\": 531.4726452935823,\n      \"reduction_percent\": 1.4209776707368338,\n      \"wins\": 7,\n      \"candidate_max_local_wall_s\": 3.943268899980467,\n      \"baseline_failed_clears\": 446,\n      \"candidate_failed_clears\": 117\n    },\n    \"cluster\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 456.1376344781413,\n      \"candidate_s_per_source\": 451.36283524012754,\n      \"reduction_percent\": 1.0467891436926724,\n      \"wins\": 5,\n      \"candidate_max_local_wall_s\": 3.903483400004916,\n      \"baseline_failed_clears\": 65,\n      \"candidate_failed_clears\": 17\n    },\n    \"directed\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 532.0182919793261,\n      \"candidate_s_per_source\": 519.3927171877824,\n      \"reduction_percent\": 2.3731467473743106,\n      \"wins\": 8,\n      \"candidate_max_local_wall_s\": 3.727893100003712,\n      \"baseline_failed_clears\": 361,\n      \"candidate_failed_clears\": 91\n    },\n    \"edge\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 618.9136491790455,\n      \"candidate_s_per_source\": 695.2561234874953,\n      \"reduction_percent\": -12.334915284177983,\n      \"wins\": 1,\n      \"candidate_max_local_wall_s\": 5.4315031000296585,\n      \"baseline_failed_clears\": 468,\n      \"candidate_failed_clears\": 491\n    },\n    \"extreme\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 536.2797495941942,\n      \"candidate_s_per_source\": 524.8978350490322,\n      \"reduction_percent\": 2.1223838031875553,\n      \"wins\": 6,\n      \"candidate_max_local_wall_s\": 3.9501915999571793,\n      \"baseline_failed_clears\": 362,\n      \"candidate_failed_clears\": 147\n    },\n    \"minrange\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 541.1663018868262,\n      \"candidate_s_per_source\": 564.3535036690996,\n      \"reduction_percent\": -4.284672142635104,\n      \"wins\": 3,\n      \"candidate_max_local_wall_s\": 3.2989293999853544,\n      \"baseline_failed_clears\": 265,\n      \"candidate_failed_clears\": 40\n    },\n    \"omni\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 470.0882447175891,\n      \"candidate_s_per_source\": 433.6594651455739,\n      \"reduction_percent\": 7.749349187385057,\n      \"wins\": 10,\n      \"candidate_max_local_wall_s\": 4.424771399993915,\n      \"baseline_failed_clears\": 109,\n      \"candidate_failed_clears\": 13\n    },\n    \"tangent\": {\n      \"scenarios\": 10,\n      \"sources\": 126,\n      \"baseline_s_per_source\": 561.670311098958,\n      \"candidate_s_per_source\": 635.6357828966737,\n      \"reduction_percent\": -13.168841282174192,\n      \"wins\": 2,\n      \"candidate_max_local_wall_s\": 4.200880900025368,\n      \"baseline_failed_clears\": 298,\n      \"candidate_failed_clears\": 180\n    }\n  },\n  \"worst_holdout_cases\": [\n    {\n      \"seed\": 40015,\n      \"baseline\": 387.04202686418705,\n      \"candidate\": 458.4328391905536,\n      \"delta\": 71.39081232636653\n    },\n    {\n      \"seed\": 40074,\n      \"baseline\": 360.0109546591835,\n      \"candidate\": 421.7057373537806,\n      \"delta\": 61.69478269459711\n    },\n    {\n      \"seed\": 40081,\n      \"baseline\": 300.3457610199175,\n      \"candidate\": 338.85691758087586,\n      \"delta\": 38.51115656095834\n    },\n    {\n      \"seed\": 40011,\n      \"baseline\": 540.5537665351077,\n      \"candidate\": 577.1170313197341,\n      \"delta\": 36.563264784626426\n    },\n    {\n      \"seed\": 40090,\n      \"baseline\": 477.47579017992007,\n      \"candidate\": 511.84642821598425,\n      \"delta\": 34.37063803606418\n    },\n    {\n      \"seed\": 40006,\n      \"baseline\": 512.8801796739745,\n      \"candidate\": 540.3997028810244,\n      \"delta\": 27.51952320704993\n    },\n    {\n      \"seed\": 40068,\n      \"baseline\": 370.1625151267511,\n      \"candidate\": 395.01821927680385,\n      \"delta\": 24.85570415005276\n    },\n    {\n      \"seed\": 40097,\n      \"baseline\": 391.73814253529434,\n      \"candidate\": 410.0312187723481,\n      \"delta\": 18.293076237053754\n    },\n    {\n      \"seed\": 40072,\n      \"baseline\": 388.81130094340705,\n      \"candidate\": 405.6656208222432,\n      \"delta\": 16.85431987883618\n    },\n    {\n      \"seed\": 40029,\n      \"baseline\": 456.7679491163,\n      \"candidate\": 473.3338690160872,\n      \"delta\": 16.565919899787218\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "build_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "Report generated from measured paired results.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "utils/check_figure.py",
+      "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\*.svg",
+      "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\*.png",
+      "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\*.png",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "stdout": "\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_scan_layout.svg ---\n  category: vector  ext: svg  size: 22803 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_time_parts.svg ---\n  category: vector  ext: svg  size: 9662 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_trajectories.svg ---\n  category: vector  ext: svg  size: 27372 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_direction_mix.svg ---\n  category: vector  ext: svg  size: 25443 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_layout.svg ---\n  category: vector  ext: svg  size: 17330 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_source_counts.svg ---\n  category: vector  ext: svg  size: 9353 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_algorithms.svg ---\n  category: vector  ext: svg  size: 115313 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_paired.svg ---\n  category: vector  ext: svg  size: 27733 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_stress.svg ---\n  category: vector  ext: svg  size: 41327 B\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_scan_layout.png ---\n  category: raster  ext: png  size: 94238 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_time_parts.png ---\n  category: raster  ext: png  size: 44961 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\process_q4_trajectories.png ---\n  category: raster  ext: png  size: 158052 B\n  pixels: 2160x1080  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_direction_mix.png ---\n  category: raster  ext: png  size: 77226 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_layout.png ---\n  category: raster  ext: png  size: 88618 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\raw_q4_source_counts.png ---\n  category: raster  ext: png  size: 37619 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_algorithms.png ---\n  category: raster  ext: png  size: 265425 B\n  pixels: 1920x3120  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_paired.png ---\n  category: raster  ext: png  size: 131272 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\result_q4_stress.png ---\n  category: raster  ext: png  size: 103490 B\n  pixels: 2160x1260  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\process_q4_scan_layout_grayscale.png ---\n  category: raster  ext: png  size: 91617 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\process_q4_time_parts_grayscale.png ---\n  category: raster  ext: png  size: 45060 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\process_q4_trajectories_grayscale.png ---\n  category: raster  ext: png  size: 132551 B\n  pixels: 2160x1080  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\raw_q4_direction_mix_grayscale.png ---\n  category: raster  ext: png  size: 69755 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\raw_q4_layout_grayscale.png ---\n  category: raster  ext: png  size: 86849 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\raw_q4_source_counts_grayscale.png ---\n  category: raster  ext: png  size: 37625 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\result_q4_algorithms_grayscale.png ---\n  category: raster  ext: png  size: 264665 B\n  pixels: 1920x3120  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\result_q4_paired_grayscale.png ---\n  category: raster  ext: png  size: 118091 B\n  pixels: 1920x1200  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n--- C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures\\_qa\\result_q4_stress_grayscale.png ---\n  category: raster  ext: png  size: 95980 B\n  pixels: 2160x1260  dpi: (299.9994, 299.9994)\n  [PASS] 无问题。\n\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\张靖浩\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "utils/figure_audit.py",
+      "C:\\Users\\张靖浩\\Documents\\Codex\\2026-09-12\\zai\\outputs\\q4_push350\\figures",
+      "--questions",
+      "q4",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"directory\": \"C:\\\\Users\\\\张靖浩\\\\Documents\\\\Codex\\\\2026-09-12\\\\zai\\\\outputs\\\\q4_push350\\\\figures\",\n  \"questions\": [\n    \"q4\"\n  ],\n  \"files\": {\n    \"process_q4_scan_layout.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"process_q4_scan_layout.svg\": {\n      \"text_count\": 22,\n      \"embedded_raster\": false\n    },\n    \"process_q4_time_parts.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"process_q4_time_parts.svg\": {\n      \"text_count\": 13,\n      \"embedded_raster\": false\n    },\n    \"process_q4_trajectories.png\": {\n      \"width_px\": 2160,\n      \"height_px\": 1080,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 7.200014400028801,\n      \"height_in\": 3.6000072000144003\n    },\n    \"process_q4_trajectories.svg\": {\n      \"text_count\": 26,\n      \"embedded_raster\": false\n    },\n    \"raw_q4_direction_mix.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"raw_q4_direction_mix.svg\": {\n      \"text_count\": 14,\n      \"embedded_raster\": false\n    },\n    \"raw_q4_layout.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"raw_q4_layout.svg\": {\n      \"text_count\": 18,\n      \"embedded_raster\": false\n    },\n    \"raw_q4_source_counts.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"raw_q4_source_counts.svg\": {\n      \"text_count\": 14,\n      \"embedded_raster\": false\n    },\n    \"result_q4_algorithms.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 3120,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 10.4000208000416\n    },\n    \"result_q4_algorithms.svg\": {\n      \"text_count\": 46,\n      \"embedded_raster\": false\n    },\n    \"result_q4_paired.png\": {\n      \"width_px\": 1920,\n      \"height_px\": 1200,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 6.400012800025601,\n      \"height_in\": 4.000008000016\n    },\n    \"result_q4_paired.svg\": {\n      \"text_count\": 19,\n      \"embedded_raster\": false\n    },\n    \"result_q4_stress.png\": {\n      \"width_px\": 2160,\n      \"height_px\": 1260,\n      \"dpi_x\": 299.9994,\n      \"dpi_y\": 299.9994,\n      \"width_in\": 7.200014400028801,\n      \"height_in\": 4.2000084000168005\n    },\n    \"result_q4_stress.svg\": {\n      \"text_count\": 16,\n      \"embedded_raster\": false\n    }\n  },\n  \"issues\": []\n}\n",
+    "stderr": ""
+  }
+]

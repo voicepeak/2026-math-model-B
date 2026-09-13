@@ -1,0 +1,33 @@
+{
+  "frozen_at_utc": "2026-09-12T12:34:17.587707+00:00",
+  "selected_development_candidate": "ring_multi_optical",
+  "routing": "multistart",
+  "localizer": "optical",
+  "pilot_m": 0.0,
+  "trial_radius_m": 60.0,
+  "scores_40_development_s_per_source": {
+    "ring_multi": 479.6421234524731,
+    "ring_optical": 478.4127987466205,
+    "ring_multi_optical": 468.50807432765254,
+    "pilot200_optical": 478.470725023901
+  },
+  "development_seeds": [
+    1,
+    40
+  ],
+  "holdout_seeds": [
+    30001,
+    30100
+  ],
+  "stress_seeds": [
+    101,
+    110
+  ],
+  "rule": "Minimum source-weighted completion time among four development finalists, all-cleared required; no holdout tuning.",
+  "input_hashes": {
+    "screening_v2.json": "e8f820880860d11d87da4a1b7db1ee170e7536ee0ebf574c4c71157500eed126",
+    "development_v2.json": "1c77638efebdc63c88584b2bf09b8eb24ce0f6b84e0126b0a6294f955c3b2403",
+    "screening_v3.json": "2103b8fa80eaef5d716f97d052f643d2227695aee58ab955cb5455d63adc4292",
+    "development_v3.json": "718da7e5e92cfb210df0fe3f0c30d4570e522d55aeb5fbf554e7f5f133022438"
+  }
+}

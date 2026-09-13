@@ -1,0 +1,105 @@
+{
+  "scope": "P1 particle-guided optical attempt order with geometric fallback; fixed ring21 prior proof retained",
+  "status": "PASS",
+  "input_sha256": {
+    "strategy_particle.py": "32102a9b0777318aaa6c8dbc9475e772081c9b764fdb3c9a766b3b8149d83e38",
+    "strategy_ring21.py": "1388f9fce7a92a19b6906721dead6363b07adaae822d6e3e149200c84e8c06c6",
+    "strategy_explore.py": "2159cea09edd4bce0e94cb7f410061f17409a472dd3601a2ccfa699d7e83ec8c",
+    "coverage_certificate.py": "ff8aed3838fedfa16a891777ad0d3bd15d728100e1be693a4e2bc0cfe4b4958c",
+    "benchmark.py": "719badd6b204dbc8f6e2d70c3cd8db9d3539cc27c0628ad000485da93de43a85",
+    "robot_core.py": "ba59becdf95fdfc858a66b87ff5b8c11380d02dfb27e595f939f00a3d25d4e71",
+    "geometry.py": "99d405d4ec6d1e7a2e87129f6f0eebc5bb6c32d3a514da642d22d7ea34822c4e",
+    "experiment.py": "03019ff9d068ab2f1b0a5e9738b8cc231e248a463e05ad8f7b6b12d428b8bc5f"
+  },
+  "commands": [
+    {
+      "description": "experiment.Explore=Particle; seed3 default random/extreme, negative_info=False random, particle_tries=3 random",
+      "exit_code": 0
+    },
+    {
+      "description": "Independent trace timing and clears; latent screening ground-truth audit isolated from strategy; forced heuristic failure/empty-particle fallback tests",
+      "exit_code": 0
+    }
+  ],
+  "cases": [
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "particle21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 455.1004876007883,
+      "fallback_count": 1
+    },
+    {
+      "seed": 3,
+      "stress": "extreme",
+      "algorithm": "particle21",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 515.9314986564227,
+      "fallback_count": 5
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "particle21_no_negative",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 455.1004876007883,
+      "fallback_count": 1
+    },
+    {
+      "seed": 3,
+      "stress": "random",
+      "algorithm": "particle21_tries3",
+      "total": 13,
+      "cleared": 13,
+      "average_time_s": 450.0482185833667,
+      "fallback_count": 1
+    }
+  ],
+  "independent_time_max_error_s": 0.0,
+  "actual_source_screening_checks": 52,
+  "forced_fallback_tests": [
+    {
+      "tries": 0,
+      "particles": 10,
+      "attempts": 0,
+      "fallback": true
+    },
+    {
+      "tries": 3,
+      "particles": 10,
+      "attempts": 3,
+      "fallback": true
+    },
+    {
+      "tries": 6,
+      "particles": 10,
+      "attempts": 6,
+      "fallback": true
+    },
+    {
+      "tries": 6,
+      "particles": 0,
+      "attempts": 0,
+      "fallback": true
+    }
+  ],
+  "semantic_review": {
+    "public_inputs": "Particles derived solely from tracked public-bearing polygon; histories from own trace contain public measure/clear responses, coordinates and channel. No simulator-source access in online class.",
+    "negative_info": "Minimum feasible radius max(1000,positive distances); only negative points strictly inside that radius constrain half-plane orientation. Angular boundaries/midpoints enumerate sign cells. Boundary relaxation affects heuristic plausibility only.",
+    "guarantee": "Filtering negative observations and failed-clear disks changes particle weights/order only; polygon and finite scan nodes unchanged. After bounded optical attempts or empty particle list, inherited complete rectangle sweep runs.",
+    "sampling": "Triangle selection weighted by triangle area, low-discrepancy barycentric samples stay inside each triangle; heuristic sampling is not a probability or completeness proof."
+  },
+  "findings": {
+    "P0": [],
+    "P1": [],
+    "P2": [
+      "No improvement or 350 s/source claim follows from these minimal cases.",
+      "negative_info screening permits angular boundary false positives intentionally; this weakens ranking only and is not a proof of posterior feasibility."
+    ]
+  },
+  "rework": "None for P1. Full evaluation and P2 required before delivery; substantive changes invalidate affected gate."
+}

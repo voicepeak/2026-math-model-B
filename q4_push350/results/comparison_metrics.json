@@ -1,0 +1,202 @@
+{
+  "development": {
+    "scenarios": 40,
+    "sources": 526,
+    "baseline_s_per_source": 468.50807432765254,
+    "candidate_s_per_source": 456.2625172561428,
+    "reduction_percent": 2.6137344781267835,
+    "wins": 25,
+    "candidate_max_local_wall_s": 5.261760499968659,
+    "baseline_failed_clears": 769,
+    "candidate_failed_clears": 142
+  },
+  "holdout": {
+    "scenarios": 100,
+    "sources": 1321,
+    "baseline_s_per_source": 468.52457748610624,
+    "candidate_s_per_source": 449.90165562039846,
+    "reduction_percent": 3.97480148546957,
+    "wins": 77,
+    "candidate_max_local_wall_s": 5.487622999993619,
+    "baseline_failed_clears": 2456,
+    "candidate_failed_clears": 504,
+    "paired_bootstrap_95_percent": [
+      2.71917284867854,
+      5.140788543693506
+    ]
+  },
+  "stress": {
+    "scenarios": 80,
+    "sources": 1008,
+    "baseline_s_per_source": 531.9259745614693,
+    "candidate_s_per_source": 544.5038634961709,
+    "reduction_percent": -2.36459386008947,
+    "wins": 42,
+    "candidate_max_local_wall_s": 5.4315031000296585,
+    "baseline_failed_clears": 2374,
+    "candidate_failed_clears": 1096
+  },
+  "all": {
+    "scenarios": 220,
+    "sources": 2855,
+    "baseline_s_per_source": 490.9063384635561,
+    "candidate_s_per_source": 484.47427865338625,
+    "reduction_percent": 1.310241752082686,
+    "wins": 144,
+    "candidate_max_local_wall_s": 5.487622999993619,
+    "baseline_failed_clears": 5599,
+    "candidate_failed_clears": 1742
+  },
+  "stress_groups": {
+    "bias": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 539.1336135576735,
+      "candidate_s_per_source": 531.4726452935823,
+      "reduction_percent": 1.4209776707368338,
+      "wins": 7,
+      "candidate_max_local_wall_s": 3.943268899980467,
+      "baseline_failed_clears": 446,
+      "candidate_failed_clears": 117
+    },
+    "cluster": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 456.1376344781413,
+      "candidate_s_per_source": 451.36283524012754,
+      "reduction_percent": 1.0467891436926724,
+      "wins": 5,
+      "candidate_max_local_wall_s": 3.903483400004916,
+      "baseline_failed_clears": 65,
+      "candidate_failed_clears": 17
+    },
+    "directed": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 532.0182919793261,
+      "candidate_s_per_source": 519.3927171877824,
+      "reduction_percent": 2.3731467473743106,
+      "wins": 8,
+      "candidate_max_local_wall_s": 3.727893100003712,
+      "baseline_failed_clears": 361,
+      "candidate_failed_clears": 91
+    },
+    "edge": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 618.9136491790455,
+      "candidate_s_per_source": 695.2561234874953,
+      "reduction_percent": -12.334915284177983,
+      "wins": 1,
+      "candidate_max_local_wall_s": 5.4315031000296585,
+      "baseline_failed_clears": 468,
+      "candidate_failed_clears": 491
+    },
+    "extreme": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 536.2797495941942,
+      "candidate_s_per_source": 524.8978350490322,
+      "reduction_percent": 2.1223838031875553,
+      "wins": 6,
+      "candidate_max_local_wall_s": 3.9501915999571793,
+      "baseline_failed_clears": 362,
+      "candidate_failed_clears": 147
+    },
+    "minrange": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 541.1663018868262,
+      "candidate_s_per_source": 564.3535036690996,
+      "reduction_percent": -4.284672142635104,
+      "wins": 3,
+      "candidate_max_local_wall_s": 3.2989293999853544,
+      "baseline_failed_clears": 265,
+      "candidate_failed_clears": 40
+    },
+    "omni": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 470.0882447175891,
+      "candidate_s_per_source": 433.6594651455739,
+      "reduction_percent": 7.749349187385057,
+      "wins": 10,
+      "candidate_max_local_wall_s": 4.424771399993915,
+      "baseline_failed_clears": 109,
+      "candidate_failed_clears": 13
+    },
+    "tangent": {
+      "scenarios": 10,
+      "sources": 126,
+      "baseline_s_per_source": 561.670311098958,
+      "candidate_s_per_source": 635.6357828966737,
+      "reduction_percent": -13.168841282174192,
+      "wins": 2,
+      "candidate_max_local_wall_s": 4.200880900025368,
+      "baseline_failed_clears": 298,
+      "candidate_failed_clears": 180
+    }
+  },
+  "worst_holdout_cases": [
+    {
+      "seed": 40015,
+      "baseline": 387.04202686418705,
+      "candidate": 458.4328391905536,
+      "delta": 71.39081232636653
+    },
+    {
+      "seed": 40074,
+      "baseline": 360.0109546591835,
+      "candidate": 421.7057373537806,
+      "delta": 61.69478269459711
+    },
+    {
+      "seed": 40081,
+      "baseline": 300.3457610199175,
+      "candidate": 338.85691758087586,
+      "delta": 38.51115656095834
+    },
+    {
+      "seed": 40011,
+      "baseline": 540.5537665351077,
+      "candidate": 577.1170313197341,
+      "delta": 36.563264784626426
+    },
+    {
+      "seed": 40090,
+      "baseline": 477.47579017992007,
+      "candidate": 511.84642821598425,
+      "delta": 34.37063803606418
+    },
+    {
+      "seed": 40006,
+      "baseline": 512.8801796739745,
+      "candidate": 540.3997028810244,
+      "delta": 27.51952320704993
+    },
+    {
+      "seed": 40068,
+      "baseline": 370.1625151267511,
+      "candidate": 395.01821927680385,
+      "delta": 24.85570415005276
+    },
+    {
+      "seed": 40097,
+      "baseline": 391.73814253529434,
+      "candidate": 410.0312187723481,
+      "delta": 18.293076237053754
+    },
+    {
+      "seed": 40072,
+      "baseline": 388.81130094340705,
+      "candidate": 405.6656208222432,
+      "delta": 16.85431987883618
+    },
+    {
+      "seed": 40029,
+      "baseline": 456.7679491163,
+      "candidate": 473.3338690160872,
+      "delta": 16.565919899787218
+    }
+  ]
+}
