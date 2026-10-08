@@ -1,0 +1,33 @@
+{
+  "selected": "defer22",
+  "kwargs": {
+    "schedule": "defer"
+  },
+  "development_scores": {
+    "active_defer": 458.9273948190706,
+    "defer22": 456.2625172561428,
+    "defer_greedy22": 465.10930480588036,
+    "particle21": 472.1169163487341,
+    "previous": 468.50807432765254,
+    "ring21": 457.13464959075964
+  },
+  "criterion": "Total virtual seconds / total sources across seeds 1..40",
+  "frozen_at_utc": "2026-09-12T19:17:05.613919+00:00",
+  "target_s_per_source": 350,
+  "holdout_seeds": [
+    40001,
+    40100
+  ],
+  "stress_seeds": [
+    201,
+    210
+  ],
+  "selection_input_sha256": {
+    "results\\screening_round2.json": "a2664864accdf62ecbb95f89aa9bbf00efcd0cc26beeee90afcef44cede99283",
+    "results\\screening_round3.json": "4f934f40324b26dcb5bfb18b399672bc687958429609acca87f9fd0a74a8f19a",
+    "results\\screening_round4.json": "1cd715b4ffad8d2a5a4f0cbb39be7ac9ab4d1cd758be73c3fc5a027594a1fd13",
+    "results\\screening_round5.json": "274f66e9cec2dde5df56060df997a9014bf3f17ce3847bd1c598f53b44e88388",
+    "results\\development_extension.json": "9ee2b024115ae06fc0c13b16f504a901c3dd5a609f964beaf38c438ba28b3813",
+    "results\\development_active.json": "d907b481fe00bd9693435b5a427ed15ce8091852d0482552c6353fb066073c06"
+  }
+}
